@@ -11,7 +11,7 @@ const mini = [
     desc: "La evangelización o evangelismo, es la misión y función principal de la iglesia. Consiste en llevar las Buenas Nuevas de Jesucristo, a quienes por no conocerlas, están perdiendo su oportunidad de vivir la vida abundante y ser salvos. La dinámica para evangelizar brota de la experiencia de haber sido reconciliados con Dios. Por eso,básicamente el evangelizar es tarea de todos los cristianos, todo el tiempo y en todo lo que hacen. Cristo envió a todos los creyentes por el mundo a hacer discípulos.",
   },
   {
-    title: "Evangelismo",
+    title: "CÉLULAS GRUPOS PEQUEÑOS SALUDABLES (GPS)",
     desc: "Este Ministerio tiene como meta fundamental velar por el cuidado de los miembros de la congregación, procurando integrarlos a la vida total de la iglesia, en un clima de hermandad y amor cristiano.",
   },
   {
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="m-auto">
           <NewMember />
         </div>
-        <Header />{" "}
+        <Header />
         <div className={CopperplateBold.className}>
           <p className="text-center text-black text-7xl  tracking-widest mb-16">
             Ministerios

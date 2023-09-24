@@ -13,7 +13,7 @@ function EyeCatch({ title, imageLocation, desc }) {
         </div>
       </div>
       <div className="w-[1026px] h-[240px] bg-red-600 border-8 border-black mb-2" />
-      <div className="w-[1026px] text-xl font-medium leading-[31px] tracking-wider text-center">
+      <div className="w-[1026px] text-xl font-medium leading-[31px] tracking-wider text-center capitalize">
         {desc}
       </div>
     </div>
