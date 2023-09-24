@@ -3,9 +3,9 @@ import Header from "../component/headerComponent/header";
 import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
-import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
 import SubEyeCatch from "../component/liderazgoComponents/subEyeCatch";
-
+import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
+import subEyeCatch from "../component/liderazgoComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
 import TestImage2 from "../../public/Leadership/TestImage2.png";
 import Image1 from "../../public/Leadership/TioyTia.png";
