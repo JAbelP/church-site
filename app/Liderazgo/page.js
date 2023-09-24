@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Header from "../component/headerComponent/header";
 import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent copy/footer";
+import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
-import MainEyeCatch from "../component/LiderazgoComponents/mainEyeCatch";
-import SubEyeCatch from "../component/LiderazgoComponents/subEyeCatch";
+import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
+import SubEyeCatch from "../component/liderazgoComponents/subEyeCatch";
 
 import TestImage1 from "../../public/Leadership/TestImage.png";
 import TestImage2 from "../../public/Leadership/TestImage2.png";
@@ -27,7 +27,7 @@ export default function Home() {
           imageLocation={Image1}
           altText={"Test"}
         />
-        
+
         <MainEyeCatch
           title={"PASTOR ASOCIADO"}
           names={"ALDO Y BRENDA COLON"}
