@@ -3,6 +3,8 @@ import Header from "../component/headerComponent/header";
 import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
+import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatchLiderazgo";
+
 // import SubEyeCatch from "../component/liderazgoComponents/subEyeCatch";
 // import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
 // import subEyeCatch from "../component/liderazgoComponents/subEyeCatch";
