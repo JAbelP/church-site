@@ -4,6 +4,7 @@ import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
+import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
 
 // import SubEyeCatch from "../component/liderazgoComponents/subEyeCatch";
 // import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
