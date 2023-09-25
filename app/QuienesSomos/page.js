@@ -15,20 +15,19 @@ export default function Home() {
           <NewMember />
         </div>
         <Header />
-        <h1 className="font-extrabold text-2xl">MISIÓN</h1>
-        <p className="text-xl">Somos una Iglesia que Ama y Restaura</p>
-        <div>
-        <h1 className="font-extrabold text-2xl">
-          VISIÓN
-        </h1>
-          <p className="text-xl">
-            Evangelizar y Discipular a través del Sistema de Grupos Familiares
-            la ciudad, mediante la formación de un Ministerio Hispano, haciendo
-            de cada cristiano un discípulo.
-          </p>
+        <div className="flex flex-col text-center items-center">
+          <h1 className="font-extrabold text-6xl pb-4">MISIÓN</h1>
+          <p className="text-3xl pb-8">Somos una Iglesia que Ama y Restaura</p>
+          <div>
+            <h1 className="font-extrabold text-6xl pb-4">VISIÓN</h1>
+            <p className="text-3xl pb-8">
+              Evangelizar y Discipular a través del Sistema de Grupos Familiares
+              la ciudad, mediante la formación de un Ministerio Hispano,
+              haciendo de cada cristiano un discípulo.
+            </p>
+          </div>
+          <Image src={Image1} alt="Beliefs" />
         </div>
-        <Image src={Image1} alt="Beliefs" />
-
         <Footer />
       </div>
     </main>
