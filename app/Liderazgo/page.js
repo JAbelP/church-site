@@ -5,13 +5,9 @@ import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
 import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
-
-// import SubEyeCatch from "../component/liderazgoComponents/subEyeCatch";
-// import MainEyeCatch from "../component/liderazgoComponents/mainEyeCatch";
-// import subEyeCatch from "../component/liderazgoComponents/subEyeCatch";
-// import TestImage1 from "../../public/Leadership/TestImage.png";
-// import TestImage2 from "../../public/Leadership/TestImage2.png";
-// import Image1 from "../../public/Leadership/TioyTia.png";
+import TestImage1 from "../../public/Leadership/TestImage.png";
+import TestImage2 from "../../public/Leadership/TestImage2.png";
+import Image1 from "../../public/Leadership/TioyTia.png";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
@@ -24,7 +20,7 @@ export default function Home() {
         </div>
         <Header />
 
-        {/* <MainEyeCatch
+        <MainEyeCatch
           title={"PASTORES"}
           names={"TOMAS & INGRID RAMIREZ"}
           imageLocation={Image1}
@@ -55,7 +51,7 @@ export default function Home() {
               altText={"Example"}
             />
           </div>
-        </div> */}
+        </div>
 
         <Footer />
       </div>
