@@ -210,8 +210,7 @@ export default function Home() {
                       >
                         Do you have a Petition?
                       </label>
-                      <input
-                        type="text"
+                      <textarea
                         id="petition"
                         className="border rounded-lg px-3 py-2 h-56 bg-slate-200 w-full"
                         value={petition}
