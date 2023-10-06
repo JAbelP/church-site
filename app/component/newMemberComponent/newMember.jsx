@@ -1,12 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import heroBanner from "../../../public/SoyNuevoImage/OutSideTheChurch.png";
+import Image from "next/image";
+import { EB_Garamond } from "next/font/google";
 
+const ebG = EB_Garamond({ subsets: ["latin"] });
 function NewMember() {
   return (
     <div className="bg-red-600 rounded-md w-[1220px] min-h-[379px] flex flex-col justify-end relative">
+      <Image
+        className="rounded-md w-[1220px] min-h-[379px] border-sky-500 border-8"
+        src={heroBanner}
+        alt={"Welcome new members!"}
+      />
       <Link href={"/SoyNuevo"}>
         <button className="bg-sky-500 p-3 rounded-xl text-3xl absolute bottom-14 right-20 text-black">
-          Soy Nuevo
+          <p className={ebG.className}>Soy Nuevo</p>
         </button>
       </Link>
     </div>

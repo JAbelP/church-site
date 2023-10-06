@@ -3,11 +3,13 @@ import Image from "next/image";
 
 function SubEyeCatch({ names, imageLocation, altText }) {
   return (
-    <div className="text-black">
+    <div className="text-black relative">
       <div>
-        <Image src={imageLocation} alt={altText} />
+        <div className="h-[500px] w-[500px] border-4 border-black relative">
+          <Image src={imageLocation} alt={altText} layout="fill" objectFit="cover" />
+        </div>
       </div>
-      <div className="w-[295px] text-center text-3xl tracking-widest">
+      <div className="w-64 text-center text-3xl tracking-widest mx-auto mt-4">
         <p>{names}</p>
       </div>
     </div>

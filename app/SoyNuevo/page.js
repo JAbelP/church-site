@@ -4,12 +4,17 @@ import Header from "../component/headerComponent/header";
 import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import EyeCatch from "../component/ministeriosComponents/eyeCatch";
-import localFont from "next/font/local";import { EB_Garamond } from "next/font/google";
+import localFont from "next/font/local";
+import Script from "next/script";
+import { EB_Garamond } from "next/font/google";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../font/TrajanProR.ttf" });
 
 export default function Home() {
+  // set up for reCaptcha
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
+
   // State for the form fields
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -32,10 +37,48 @@ export default function Home() {
     console.log("Heard: ", heard);
     console.log("Would Like to: ", wouldLikeTo);
     console.log("Petition: ", petition);
+
+    grecaptcha.ready(() => {
+      grecaptcha
+        .execute(siteKey, { action: "submit" })
+        .then(async (token) => {
+          console.log(token);
+          const bodyForGoogleResponse = {
+            recaptchaResponse: token,
+          };
+
+          try {
+            const response1 = await fetch("/api/reCaptcha", {
+              method: "POST",
+              headers: { "content-type": "application/json;charset=utf-8" },
+              body: JSON.stringify(bodyForGoogleResponse),
+            });
+
+            if (response1.ok) {
+              const json = await response1.json();
+              if (json.success) {
+                console.log("swagger");
+                // writeData(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date);
+                // sendEmail(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date) ;
+              }
+            } else {
+              throw new Error(response1.statusText);
+            }
+          } catch (error) {
+            console.log(error);
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
   };
 
   return (
     <main className={ebG.className}>
+      <Script
+        src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
+      />
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="m-auto"></div>
         <Header />
@@ -111,7 +154,9 @@ export default function Home() {
                 {/* 2nd Section */}
                 {/* First Row */}
                 <div className={trajanProFont.className}>
-                  <h1 className="text-4xl font-extrabold mb-4">Contact Information</h1>
+                  <h1 className="text-4xl font-extrabold mb-4">
+                    Contact Information
+                  </h1>
                 </div>
                 <div className=" flex flex-row gap-x-8 ">
                   {/* Phone */}

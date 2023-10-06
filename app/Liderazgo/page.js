@@ -8,6 +8,9 @@ import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
 import TestImage2 from "../../public/Leadership/TestImage2.png";
 import Image1 from "../../public/Leadership/TioyTia.png";
+import Image3 from "../../public/Leadership/Wellington.jpg";
+import Image4 from "../../public/Leadership/DeRosa.jpg";
+
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
@@ -38,16 +41,16 @@ export default function Home() {
           <p className=" mb-8 text-center  text-4xl font-medium tracking-widest">
             Decons
           </p>
-          <div className="flex flex-row justify-around">
+          <div className="flex flex-row justify-evenly">
             <SubEyeCatch
               names={"WELLINGTON Y MARCIA DE JESUS"}
-              imageLocation={TestImage2}
+              imageLocation={Image3}
               altText={"Example"}
             />
 
             <SubEyeCatch
               names={"JOSE Y ANA PAULA DE LA ROSA"}
-              imageLocation={TestImage2}
+              imageLocation={Image4}
               altText={"Example"}
             />
           </div>
