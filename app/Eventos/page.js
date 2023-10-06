@@ -8,7 +8,7 @@ const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 import Adoracion from "../../public/Events/Singing.webp";
 import GPS from "../../public/Events/GPS.jpg";
-import Study from "../../public/Ministries/bibleStudy.jpg";
+import Study from "../../public/Ministries/BibleStudy.jpg";
 import Pray from "../../public/Ministries/Prayer.jpg";
  
 const Events = [
