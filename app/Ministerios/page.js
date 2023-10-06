@@ -9,7 +9,7 @@ import localFont from "next/font/local";
 import Evangelismo from '../../public/Ministries/evangelismo.jpeg';
 import GPS from '../../public/Ministries/GPS.jpg';
 import worship from '../../public/Ministries/worship.webp';
-import Study from '../../public/Ministries/Biblestudy.jpg';
+import Study from '../../public/Ministries/Study.jpg';
 import mission  from '../../public/Ministries/Mission.jpg';
 import prayer  from '../../public/Ministries/Prayer.jpg';
 import Therapy  from '../../public/Ministries/Pastoral Therapy.jpg';
