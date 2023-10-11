@@ -18,10 +18,12 @@ export default function Home() {
   return (
     <main className={ebG.className}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
-        <div className="m-auto">
-          <NewMember />
-        </div>
+      <div className="mt-28 mx-auto md:mt-0">
+        <NewMember />
+      </div>
+      <div className="mt-13 md:mt-0">
         <Header />
+      </div>
 
         <MainEyeCatch
           title={"PASTORES"}
@@ -41,7 +43,7 @@ export default function Home() {
           <p className=" mb-8 text-center  text-4xl font-medium tracking-widest">
             Decons
           </p>
-          <div className="flex flex-row justify-evenly">
+          <div className="flex md:flex-row md:justify-evenly flex-col gap-y-16">
             <SubEyeCatch
               names={"WELLINGTON Y MARCIA DE JESUS"}
               imageLocation={Image3}

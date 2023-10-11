@@ -7,7 +7,7 @@ import { EB_Garamond } from "next/font/google";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 function NewMember() {
   return (
-    <div className="bg-red-600 rounded-md w-[1220px] min-h-[379px] flex flex-col justify-end relative">
+    <div className="bg-red-600 rounded-md mx-auto md:w-[1220px] md:min-h-[379px] w-3/4 flex flex-col justify-end relative">
       <Image
         className="rounded-md w-[1220px] min-h-[379px] border-sky-500 border-8"
         src={heroBanner}

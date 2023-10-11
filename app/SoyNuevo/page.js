@@ -80,9 +80,10 @@ export default function Home() {
         src={`https://www.google.com/recaptcha/api.js?render=${siteKey}`}
       />
       <div className="bg-white h-fit w-full flex flex-col text-black">
-        <div className="m-auto"></div>
+        {/* <div className="m-auto"></div> */}
         <Header />
-        <div className="flex flex-row mb-16 pl-16 text-xl">
+        <div className="flex flex-row mb-16 pl-16 text-xl lg:mt-0 mt-32">
+        {/* Left Hand Side */}
           <div className="w-2/3">
             <div>
               <div className={trajanProFont.className}>
@@ -91,7 +92,7 @@ export default function Home() {
               <form onSubmit={handleSubmit}>
                 {/* First Section */}
                 {/* First Row */}
-                <div className=" flex flex-row gap-x-8 ">
+                <div className=" flex lg:flex-row flex-col gap-x-8 ">
                   {/* Name */}
                   <div className="mb-4">
                     <label
@@ -154,11 +155,11 @@ export default function Home() {
                 {/* 2nd Section */}
                 {/* First Row */}
                 <div className={trajanProFont.className}>
-                  <h1 className="text-4xl font-extrabold mb-4">
+                  <h1 className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
                     Contact Information
                   </h1>
                 </div>
-                <div className=" flex flex-row gap-x-8 ">
+                <div className=" flex lg:flex-row flex-col gap-x-8 ">
                   {/* Phone */}
                   <div className="mb-4">
                     <label
@@ -199,7 +200,7 @@ export default function Home() {
                 </div>
                 {/* 3rd Section */}
                 <div className={trajanProFont.className}>
-                  <h1 className="text-4xl font-extrabold mb-4">
+                  <h1 className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
                     Additional Information
                   </h1>
                 </div>
@@ -277,7 +278,7 @@ export default function Home() {
             </div>
           </div>
           {/* Right hand side */}
-          <div className="w-1/3">
+          <div className="w-1/3 hidden lg:block">
             <div className="relative">
               <div className="w-[298px]">
                 <p className="text-[34px] capitalize leading-[70.38px]">

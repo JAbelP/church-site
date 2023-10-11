@@ -11,11 +11,13 @@ export default function Home() {
   return (
     <main className={ebG.className}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
-        <div className="m-auto">
-          <NewMember />
-        </div>
+      <div className="mt-28 mx-auto md:mt-0">
+        <NewMember />
+      </div>
+      <div className="mt-13 md:mt-0">
         <Header />
-        <div className="flex flex-col text-center items-center">
+      </div>
+        <div className="flex flex-col text-center items-center mt-5">
           <h1 className="font-extrabold text-6xl pb-4">MISIÓN</h1>
           <p className="text-3xl pb-8">Somos una Iglesia que Ama y Restaura</p>
           <div>

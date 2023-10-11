@@ -12,7 +12,7 @@ function MainEyeCatch({ title, names, imageLocation, altText }) {
           <div>
             <p className="text-5xl font-medium tracking-widest">{title}</p>
           </div>
-          <div className="h-[610px] w-[1500px] border-4 border-black relative mx-auto my-4">
+          <div className="lg:h-[610px] lg:w-[1500px] w-4/5 h-[400px] border-4 border-black relative mx-auto my-4">
             {/* Use mx-auto class to center the image */}
             <Image
               src={imageLocation}

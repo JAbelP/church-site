@@ -5,7 +5,7 @@ function SubEyeCatch({ names, imageLocation, altText }) {
   return (
     <div className="text-black relative">
       <div>
-        <div className="h-[500px] w-[500px] border-4 border-black relative">
+        <div className="h-[500px] lg:w-[500px] w-auto border-4 border-black relative">
           <Image src={imageLocation} alt={altText} layout="fill" objectFit="cover" />
         </div>
       </div>
