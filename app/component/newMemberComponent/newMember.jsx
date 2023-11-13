@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import heroBanner from "../../../public/SoyNuevoImage/OutSideTheChurch.png";
+import heroBanner2 from "../../../public/SoyNuevoImage/OutSideTheChurch.jpg"
 import Image from "next/image";
 import { EB_Garamond } from "next/font/google";
 
@@ -9,8 +10,8 @@ function NewMember() {
   return (
     <div className="bg-red-600 rounded-md mx-auto md:w-[1220px] md:min-h-[379px] w-3/4 flex flex-col justify-end relative">
       <Image
-        className="rounded-md w-[1220px] min-h-[379px] border-sky-500 border-8"
-        src={heroBanner}
+        className="rounded-md w-[12204px] min-h-[379px] max-h-[379px]  border-sky-500 border-8"
+        src={heroBanner2}
         alt={"Welcome new members!"}
       />
       <Link href={"/SoyNuevo"}>
