@@ -26,24 +26,7 @@ export default function Home() {
         
           <p className="text-5xl font-medium tracking-widest mx-auto">PASTORES</p>
         
-        <SubEyeCatch
-          title={"PASTORES"}
-          names={"TOMAS Y INGRID RAMIREZ"}
-          imageLocation={Pastor}
-          altText={"Pastores: TOMAS Y INGRID RAMIREZ"}
-          type={2}
-        />
-          <p className="text-5xl font-medium tracking-widest mx-auto">
-            PASTOR ASOCIADO
-          </p>
-        
-        <SubEyeCatch
-          title={"PASTOR ASOCIADO"}
-          names={"ALDO Y BRENDA COLON"}
-          imageLocation={AldoImage}
-          altText={"Pastor Asociado: ALDO Y BRENDA COLON"}
-          type={2}
-        />
+
 
         <div className=" mt-16">
           <p className=" mb-8 text-center  text-4xl font-medium tracking-widest">
