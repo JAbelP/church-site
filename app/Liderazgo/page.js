@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "../component/headerComponent/header";
 import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
@@ -6,7 +5,6 @@ import { EB_Garamond } from "next/font/google";
 import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
 import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
-import TestImage2 from "../../public/Leadership/TestImage2.png";
 import Image1 from "../../public/Leadership/TioyTia.png";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
@@ -25,11 +23,11 @@ export default function Home() {
         <Header />
       </div>
 
-        <MainEyeCatch
+        <SubEyeCatch
           title={"PASTORES"}
-          names={"TOMAS & INGRID RAMIREZ"}
+          names={"TOMAS Y INGRID RAMIREZ"}
           imageLocation={Image1}
-          altText={"Test"}
+          altText={"Pastores: TOMAS Y INGRID RAMIREZ"}
         />
 
         <MainEyeCatch
