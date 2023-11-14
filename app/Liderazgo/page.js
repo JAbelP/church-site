@@ -5,8 +5,8 @@ import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
 import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
-import Image1 from "../../public/Leadership/TioyTia.jpg";
-import Image2 from "../../public/Leadership/Colon.jpg";
+import Pastor from "../../public/Leadership/TioyTia.jpg";
+import AldoImage from "../../public/Leadership/Colon.jpg";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
 
@@ -29,7 +29,7 @@ export default function Home() {
         <SubEyeCatch
           title={"PASTORES"}
           names={"TOMAS Y INGRID RAMIREZ"}
-          imageLocation={Image1}
+          imageLocation={Pastor}
           altText={"Pastores: TOMAS Y INGRID RAMIREZ"}
           type={2}
         />
@@ -40,7 +40,7 @@ export default function Home() {
         <SubEyeCatch
           title={"PASTOR ASOCIADO"}
           names={"ALDO Y BRENDA COLON"}
-          imageLocation={Image2}
+          imageLocation={AldoImage}
           altText={"Pastor Asociado: ALDO Y BRENDA COLON"}
           type={2}
         />
