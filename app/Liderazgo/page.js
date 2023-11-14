@@ -5,7 +5,7 @@ import { EB_Garamond } from "next/font/google";
 import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
 import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
-import Image1 from "../../public/Leadership/TioyTia.png";
+import Image1 from "../../public/Leadership/TioyTia.jpg";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
 
