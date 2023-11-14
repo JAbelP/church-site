@@ -6,6 +6,7 @@ import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLideraz
 import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
 import Image1 from "../../public/Leadership/TioyTia1.jpg";
+import Image2 from "../../public/Leadership/Colon.jpg";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
 
@@ -33,8 +34,8 @@ export default function Home() {
         <MainEyeCatch
           title={"PASTOR ASOCIADO"}
           names={"ALDO Y BRENDA COLON"}
-          imageLocation={TestImage1}
-          altText={"Test"}
+          imageLocation={Image2}
+          altText={"PASTOR ASOCIADO: ALDO Y BRENDA COLON"}
         />
 
         <div className=" mt-16">
