@@ -14,13 +14,7 @@ function SubEyeCatch({ names, imageLocation, altText, type }) {
           />
         </div>
       </div>
-      <div
-        className={
-          type === 1
-            ? "w-64 text-center text-3xl tracking-widest mx-auto mt-4"
-            : "text-4xl font-normal tracking-widest mt-4 text-center mb-8"
-        }
-      >
+      <div className="text-4xl font-normal tracking-widest mt-4 text-center mb-8">
         <p>{names}</p>
       </div>
     </div>
