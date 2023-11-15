@@ -4,8 +4,11 @@ import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import Image1 from "../../public/QuienesSomosSVG/middleEyeCatch.svg";
+import localFont from "next/font/local";
+
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
+const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 
 export default function Home() {
   return (
@@ -18,6 +21,11 @@ export default function Home() {
         <Header />
       </div>
         <div className="flex flex-col text-center items-center mt-5">
+        <div className={CopperplateBold.className}>
+          <p className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
+            Ministerios
+          </p>
+        </div>
           <h1 className="font-extrabold text-6xl pb-4">MISIÓN</h1>
           <p className="text-3xl pb-8">Somos una Iglesia que Ama y Restaura</p>
           <div>

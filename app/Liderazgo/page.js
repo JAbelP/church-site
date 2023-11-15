@@ -9,8 +9,10 @@ import Image1 from "../../public/Leadership/TioyTia1.jpg";
 import Image2 from "../../public/Leadership/Colon.jpg";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
+import localFont from "next/font/local";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
+const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 
 export default function Home() {
   return (
@@ -22,9 +24,15 @@ export default function Home() {
         <div className="mt-13 md:mt-0">
           <Header />
         </div>
+
+        <div className={CopperplateBold.className}>
+          <p className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
+            Liderazgo
+          </p>
+        </div>
+
         <p className="text-5xl font-medium tracking-widest mx-auto">PASTORES</p>
         <div className="flex flex-col">
-
           <div>
             <SubEyeCatch
               title={"PASTORES"}
