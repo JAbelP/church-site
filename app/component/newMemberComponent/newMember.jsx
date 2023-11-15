@@ -3,6 +3,7 @@ import Link from "next/link";
 import heroBanner from "../../../public/SoyNuevoImage/OutSideTheChurch.jpg";
 import Image from "next/image";
 import { EB_Garamond } from "next/font/google";
+import Text from "../textComponents/text";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 function NewMember() {
@@ -15,7 +16,9 @@ function NewMember() {
       />
       <Link href={"/SoyNuevo"}>
         <button className="bg-sky-500 p-3 rounded-xl text-3xl absolute bottom-14 right-20 text-black">
-          <p className={ebG.className}>Soy Nuevo</p>
+          <div className={ebG.className}>
+            <Text aText={"Soy Nuevo"} />
+          </div>
         </button>
       </Link>
     </div>

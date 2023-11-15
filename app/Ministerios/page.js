@@ -3,7 +3,8 @@ import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import EyeCatch from "../component/ministeriosComponents/eyeCatch";
 import localFont from "next/font/local";
-
+import Text from "../component/textComponents/text";
+import LanguageSelector from "../component/flagComponents/flagSelector";
 // Images
 import Evangelismo from "../../public/Ministries/evangelismo.jpeg";
 import GPS from "../../public/Ministries/GPS.jpg";
@@ -88,11 +89,12 @@ export default function Home() {
         <div className="lg:m-auto mt-28">
           <NewMember />
         </div>
+        <LanguageSelector/>
           <Header />
         <div className={CopperplateBold.className}>
-          <p className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-            Ministerios
-          </p>
+          <div className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
+            <Text aText={'Ministerios'}/>
+          </div>
         </div>
         <div className="flex flex-col items-center">
           {mini.map((item, index) => (
