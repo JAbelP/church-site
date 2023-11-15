@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { EB_Garamond } from "next/font/google";
+import Text from "../textComponents/text";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
@@ -26,14 +27,18 @@ function Footer() {
             {/* Time and dates  */}
             <div className="w-[395px] mt-5 ">
               <div className="mb-4">
-                <p className="underline">Visítanos</p>
+                <div className="underline"><Text aText={'Visítanos'}/></div>
                 <p>7600 Winegard Rd. Orlando, FL 32809</p>
               </div>
               <div className="mb-4">
-                <p className="underline ">Horas</p>
+                <div className="underline "><Text aText={'Horas'}/></div>
                 <div>
-                  <p>Domingo 1:30 PM</p>
-                  <p>Viernes 7:30 PM</p>
+                  <div>
+                    <Text aText={"Domingo 1:30 PM"} />
+                  </div>
+                  <div>
+                    <Text aText={"Viernes 7:30 PM"} />
+                  </div>
                 </div>
               </div>
               <div className="lg:hidden block">

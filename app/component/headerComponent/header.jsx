@@ -4,6 +4,7 @@ import Link from "next/link";
 import localFont from "next/font/local";
 import { useState, useEffect } from "react";
 import { Hamburger } from "../icons/hamburger";
+import Text from "../textComponents/text";
 // Load the font and assign it to a constant in the module scope
 const TrajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
@@ -35,7 +36,7 @@ function Header() {
                   <p
                     className={`text-black text-3xl font-bold font-[Trajan Pro] underline capitalize tracking-widest`}
                   >
-                    {item.Name}
+                    <Text aText={item.Name} />
                   </p>
                 </div>
               </Link>
@@ -61,37 +62,49 @@ function Header() {
         <ul>
           <li className="pb-10">
             <Link href={"/"}>
-              <p onClick={handleMenuClick}>Casa</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Casa"} />
+              </div>
             </Link>
           </li>
 
           <li className="pb-10">
             <Link href={"/QuienesSomos"}>
-              <p onClick={handleMenuClick}>Quienes Somos</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Quienes Somos"} />
+              </div>
             </Link>
           </li>
 
           <li className="pb-10">
             <Link href={"/Liderazgo"}>
-              <p onClick={handleMenuClick}>Liderazgo</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Liderazgo"} />
+              </div>
             </Link>
           </li>
 
           <li className="pb-10">
             <Link href={"/Ministerios"}>
-              <p onClick={handleMenuClick}>Ministerios</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Ministerios"} />
+              </div>
             </Link>
           </li>
 
           <li className="pb-10">
             <Link href={"/Sermones"}>
-              <p onClick={handleMenuClick}>Sermones</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Sermones"} />
+              </div>
             </Link>
           </li>
 
           <li className="pb-10">
             <Link href={"/Ofrenda"}>
-              <p onClick={handleMenuClick}>Ofrenda</p>
+              <div onClick={handleMenuClick}>
+                <Text aText={"Ofrenda"} />
+              </div>
             </Link>
           </li>
         </ul>
