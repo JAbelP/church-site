@@ -3,7 +3,7 @@ import { useLanguageContext } from "../flagComponents/LanguageContext";
 
 function Text({ aText }) {
   const { translate } = useLanguageContext();
-  return <div className={cName}>{translate(aText)}</div>;
+  return <div>{translate(aText)}</div>;
 }
 
 export default Text;

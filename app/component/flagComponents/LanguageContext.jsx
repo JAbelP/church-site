@@ -13,11 +13,15 @@ export const LanguageContextProvider = ({ children }) => {
 
             en: {
                 Liderazgo: 'Leadership',
-                pastores: "Pastors"
+                pastores: "Pastors",
+                Decons:'Decons',
+                'pastores Asociados': 'Associate Pastors'
             },
             es: {
                 Liderazgo: 'Liderazgo',
-                pastores: "pastores"
+                pastores: "Pastores",
+                Decons:'Diáconos',
+                'pastores Asociados': 'Associate Pastores'
             }
         };
         console.log(translations[language][key])

@@ -15,6 +15,7 @@ function SubEyeCatch({ names, imageLocation, altText, type }) {
         </div>
       </div>
       <div className="text-4xl font-normal tracking-widest mt-4 text-center mb-8">
+        
         <p>{names}</p>
       </div>
     </div>
