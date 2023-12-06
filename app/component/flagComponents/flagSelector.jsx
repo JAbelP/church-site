@@ -9,7 +9,7 @@ const LanguageSelector = () => {
   };
 
   return (
-    <div className=" flex gap-x-6">
+    <div className=" bg-blue-500 z-20 p-3 rounded-lg flex flex-col fixed right-2 top-8 gap-x-6">
       <button
         onClick={() => {
           handleLanguageChange("pt");

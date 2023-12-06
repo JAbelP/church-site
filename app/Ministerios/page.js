@@ -22,17 +22,17 @@ const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 const mini = [
   {
     title: "Evangelismo",
-    desc: "La evangelización o evangelismo, es la misión y función principal de la iglesia. Consiste en llevar las Buenas Nuevas de Jesucristo, a quienes por no conocerlas, están perdiendo su oportunidad de vivir la vida abundante y ser salvos. La dinámica para evangelizar brota de la experiencia de haber sido reconciliados con Dios. Por eso,básicamente el evangelizar es tarea de todos los cristianos, todo el tiempo y en todo lo que hacen. Cristo envió a todos los creyentes por el mundo a hacer discípulos.",
+    desc: "La Evangelización O Evangelismo",
     imageLocation: Evangelismo,
   },
   {
     title: "CÉLULAS GRUPOS PEQUEÑOS SALUDABLES (GPS)",
-    desc: "Este Ministerio tiene como meta fundamental velar por el cuidado de los miembros de la congregación, procurando integrarlos a la vida total de la iglesia, en un clima de hermandad y amor cristiano.",
+    desc: "velar por el cuidado de los miembros de la congregación, procurando integrarlos a la vida total de la iglesia, en un clima de hermandad y amor cristiano.",
     imageLocation: GPS,
   },
   {
     title: "ADORACIÓN Y ALABANZAS",
-    desc: "Este Ministerio tiene como meta fundamental velar por el cuidado de los miembros de la congregación, procurando integrarlos a la vida total de la iglesia, en un clima de hermandad y amor cristiano.",
+    desc: "En el acto de adoración enriquecemos nuestra vida espiritual, pues la vida de Dios nos es ofrecida en el Cristo que hace la presencia en el culto. La adoración no es el fin último de la vida cristiana, pero es la función de la iglesia y los creyentes, que nutre y unifica todas las demás funciones del Cuerpo de Cristo.",
     imageLocation: worship,
   },
   {

@@ -1,15 +1,17 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
-import EyeCatch from "../component/ministeriosComponents/eyeCatch";
 import localFont from "next/font/local";
 import Script from "next/script";
 import { EB_Garamond } from "next/font/google";
-
+import Text from "../component/textComponents/text";
+import HeaderText from "../component/textComponents/HeaderText";
+import LabelText from "../component/textComponents/Labeltext";
+import LanguageSelector from "../component/flagComponents/flagSelector";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../font/TrajanProR.ttf" });
+
 
 export default function Home() {
   // set up for reCaptcha
@@ -82,12 +84,15 @@ export default function Home() {
       <div className="bg-white h-fit w-full flex flex-col text-black">
         {/* <div className="m-auto"></div> */}
         <Header />
+        <LanguageSelector />
         <div className="flex flex-row mb-16 pl-16 text-xl lg:mt-0 mt-32">
-        {/* Left Hand Side */}
+          {/* Left Hand Side */}
           <div className="w-2/3">
             <div>
               <div className={trajanProFont.className}>
-                <h1 className="text-4xl font-extrabold mb-4">About You</h1>
+                <div className="text-4xl font-extrabold mb-4">
+                  <HeaderText aText={"About You"} />
+                </div>
               </div>
               <form onSubmit={handleSubmit}>
                 {/* First Section */}
@@ -95,12 +100,9 @@ export default function Home() {
                 <div className=" flex lg:flex-row flex-col gap-x-8 ">
                   {/* Name */}
                   <div className="mb-4">
-                    <label
-                      htmlFor="name"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
-                      Name
-                    </label>
+                    <div className="block text-gray-700 font-bold mb-2">
+                      <LabelText htmlFor="name" aText={"Name"} />
+                    </div>
                     <input
                       type="text"
                       id="name"
@@ -114,12 +116,9 @@ export default function Home() {
 
                   {/* Age */}
                   <div className="mb-4">
-                    <label
-                      htmlFor="age"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
-                      Age
-                    </label>
+                    <div className="block text-gray-700 font-bold mb-2">
+                      <LabelText htmlFor={"age"} aText={"Age"} />
+                    </div>
                     <input
                       type="number"
                       id="age"
@@ -133,12 +132,9 @@ export default function Home() {
                 </div>
                 {/* 2nd Row */}
                 <div className="mb-4">
-                  <label
-                    htmlFor="gender"
-                    className="block text-gray-700 font-bold mb-2"
-                  >
-                    Gender
-                  </label>
+                  <div className="block text-gray-700 font-bold mb-2">
+                    <LabelText htmlFor={"gender"} aText={"Gender"} />
+                  </div>
                   <select
                     id="gender"
                     className="border rounded-lg px-3 py-2 w-[220.400px]"
@@ -146,28 +142,30 @@ export default function Home() {
                     onChange={(e) => setGender(e.target.value)}
                     required
                   >
-                    <option value="">Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
+                    <option value="">
+                      <Text aText={"Select Gender"} />
+                    </option>
+                    <option value="Male">
+                      <Text aText={"Male"} />
+                    </option>
+                    <option value="Female">
+                      <Text aText={"Female"} />
+                    </option>
                   </select>
                 </div>
                 {/* 2nd Section */}
                 {/* First Row */}
                 <div className={trajanProFont.className}>
-                  <h1 className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
-                    Contact Information
-                  </h1>
+                  <div className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
+                    <HeaderText aText={"Contact Information"} />
+                  </div>
                 </div>
                 <div className=" flex lg:flex-row flex-col gap-x-8 ">
                   {/* Phone */}
                   <div className="mb-4">
-                    <label
-                      htmlFor="phone"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
-                      Phone
-                    </label>
+                    <div className="block text-gray-700 font-bold mb-2">
+                      <LabelText htmlFor={"phone"} aText={"Phone"} />
+                    </div>
                     <input
                       type="tel"
                       id="phone"
@@ -181,12 +179,9 @@ export default function Home() {
 
                   {/* Email */}
                   <div className="mb-4">
-                    <label
-                      htmlFor="email"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
-                      Email
-                    </label>
+                    <div className="block text-gray-700 font-bold mb-2">
+                      <LabelText htmlFor={"email"} aText={"Email"} />
+                    </div>
                     <input
                       type="email"
                       id="email"
@@ -200,18 +195,18 @@ export default function Home() {
                 </div>
                 {/* 3rd Section */}
                 <div className={trajanProFont.className}>
-                  <h1 className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
-                    Additional Information
-                  </h1>
+                  <div className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
+                    <HeaderText aText={"Additional Information"} />
+                  </div>
                 </div>
                 {/* how did you hear about us */}
                 <div className="mb-4">
-                  <label
-                    htmlFor="heard"
-                    className="block text-gray-700 font-bold mb-2 capitalize"
-                  >
-                    How Did you hear about us?
-                  </label>
+                  <div className="block text-gray-700 font-bold mb-2 capitalize">
+                    <LabelText
+                      htmlFor={"heard"}
+                      aText={"How did you hear about us?"}
+                    />
+                  </div>
                   <select
                     id="heard"
                     className="border rounded-lg px-3 py-2 w-[220.400px]"
@@ -219,20 +214,26 @@ export default function Home() {
                     onChange={(e) => setHeard(e.target.value)}
                     required
                   >
-                    <option value="">Select an Option</option>
-                    <option value="Friend">Friend</option>
-                    <option value="Evangalism">Evangalism</option>
-                    <option value="Facebook">Facebook</option>
+                    <option value="">
+                      <Text aText={"Select An Option"} />
+                    </option>
+                    <option value="Friend">
+                      <Text aText={"Friend"} />
+                    </option>
+                    <option value="Evangalism">
+                      <Text aText={"Evangalism"} />
+                    </option>
+                    <option value="Facebook">
+                      <Text aText={"Facebook"} />
+                    </option>
                   </select>
                   {/* how did you hear about us? */}
                   {/* would like to */}
                   <div className="mb-4">
-                    <label
-                      htmlFor="wouldLikeTo"
-                      className="block text-gray-700 font-bold my-2 capitalize"
-                    >
-                      I would like to...
-                    </label>
+                  <div className="block text-gray-700 font-bold my-2 capitalize">
+
+                  <LabelText aText={"I would like to..."} htmlFor={"wouldLikeTo"} />
+                  </div>
                     <select
                       id="wouldLikeTo"
                       className="border rounded-lg px-3 py-2 w-[220.400px]"
@@ -240,22 +241,30 @@ export default function Home() {
                       onChange={(e) => setWouldLikeTo(e.target.value)}
                       required
                     >
-                      <option value="">Select an Option</option>
-                      <option value="Join The Church">Join The Church</option>
-                      <option value="Convert">Convert</option>
-                      <option value="Talk To Someone">Talk To Someone</option>
+                      <option value="">
+                        <Text aText={"Select An Option"} />
+                      </option>
+                      <option value="Join The Church">
+                        <Text aText={"Join The Church"} />
+                      </option>
+                      <option value="Convert">
+                        <Text aText={"Convert"} />
+                      </option>
+                      <option value="Talk To Someone">
+                        <Text aText={"Talk To Someone"} />
+                      </option>
                     </select>
                   </div>
                   {/* would like to */}
                   {/* Do you have a Petition */}
                   <div className="mb-4">
                     <div className="mb-4">
-                      <label
-                        htmlFor="petition"
-                        className="block text-gray-700 font-bold mb-2"
-                      >
-                        Do you have a Petition?
-                      </label>
+                      <div className="block text-gray-700 font-bold mb-2">
+                        <LabelText
+                          htmlFor={"petition"}
+                          aText={"Do You Have a Petition?"}
+                        />
+                      </div>
                       <textarea
                         id="petition"
                         className="border rounded-lg px-3 py-2 h-56 bg-slate-200 w-full"
@@ -271,7 +280,7 @@ export default function Home() {
                     type="submit"
                     className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
                   >
-                    Submit
+                    <Text aText="Submit" />
                   </button>
                 </div>
               </form>
@@ -281,12 +290,16 @@ export default function Home() {
           <div className="w-1/3 hidden lg:block">
             <div className="relative">
               <div className="w-[298px]">
-                <p className="text-[34px] capitalize leading-[70.38px]">
-                  Vengan a mí todos ustedes que están cansados y agobiados, y yo
-                  les daré descanso.
-                </p>
+                <div className="text-[34px] capitalize leading-[70.38px]">
+                  <Text
+                    aText="Vengan a mí todos ustedes que están cansados y agobiados, y yo
+                  les daré descanso."
+                  />
+                </div>
               </div>
-              <div className="text-[51px]">- Mateo 11:28</div>
+              <div className="text-[51px]">
+                <Text aText={"- Mateo 11:28"} />
+              </div>
             </div>
           </div>
 

@@ -1,9 +1,9 @@
 "use client";
 import { useLanguageContext } from "../flagComponents/LanguageContext";
 
-function Text({ aText }) {
+function HeaderText({ aText }) {
   const { translate } = useLanguageContext();
-  return <p>{translate(aText)}</p>;
+  return <h1>{translate(aText)}</h1>;
 }
 
-export default Text;
+export default HeaderText;

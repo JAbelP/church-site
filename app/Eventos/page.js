@@ -10,11 +10,13 @@ import Adoracion from "../../public/Events/Singing.webp";
 import GPS from "../../public/Events/GPS.jpg";
 import Study from "../../public/Ministries/Study.jpg";
 import Pray from "../../public/Ministries/Prayer.jpg";
+import Text from "../component/textComponents/text";
+import LanguageSelector from "../component/flagComponents/flagSelector";
  
 const Events = [
   {
     eventName: "Culto De Adoracion",
-    eventTime: "Domingo 1:30 Pm",
+    eventTime: "Domingo 1:30 PM",
     eventLocation: "2318 Cilantro Dr. Orlando FL 32837",
     imageLocation: Adoracion,
   },
@@ -45,9 +47,9 @@ export default function Home() {
       <Header />
       <div>
         <div className={CopperplateBold.className}>
-          <p className="text-center text-black text-7xl  tracking-widest mb-16">
-            Eventos
-          </p>
+          <div className="text-center text-black text-7xl  tracking-widest mb-16">
+            <Text aText={'Eventos'}/>
+          </div>
         </div>
         <div className="flex flex-col items-center gap-y-8">
          

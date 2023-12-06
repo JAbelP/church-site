@@ -1,10 +1,10 @@
 import React from "react";
 import localFont from "next/font/local";
 import Image from "next/image";
+import Text from "../textComponents/text";
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 function Eventos({ eventName, eventTime, eventLocation, eventImage }) {
-
   debugger;
   return (
     <div className="flex flex-row">
@@ -13,9 +13,13 @@ function Eventos({ eventName, eventTime, eventLocation, eventImage }) {
       </div>
       <div className="ml-8">
         <div className={CopperplateBold.className}>
-          <p className="text-2xl tracking-widest mb-4 w-[424px]">{eventName}</p>
+          <div className="text-2xl tracking-widest mb-4 w-[424px]">
+            <Text aText={eventName} />
+          </div>
         </div>
-        <p className="text-xl tracking-tight mb-4 w-[424px]">{eventTime}</p>
+        <div className="text-xl tracking-tight mb-4 w-[424px]">
+          <Text aText={eventTime} />
+        </div>
         {eventLocation && (
           <p className="text-xl tracking-tight mb-4 w-[424px]">
             {eventLocation}
