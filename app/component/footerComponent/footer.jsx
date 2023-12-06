@@ -43,7 +43,7 @@ function Footer() {
               </div>
               <div className="lg:hidden block">
                 <p className="text-4xl underline mb-3">Links</p>
-                <p className=" text-xl">MOSAIC MENNONITE CONFERENCE</p>
+                <a href="https://mosaicmennonites.org/" className=" text-xl">MOSAIC MENNONITE CONFERENCE</a>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ function Footer() {
         <div className="hidden lg:ml-8 lg:mt-4 lg:block">
           <div className="mb-40">
             <p className="text-5xl">Links</p>
-            <p className="font-semibold">MOSAIC MENNONITE CONFERENCE</p>
+            <a href="https://mosaicmennonites.org/" className="font-semibold">MOSAIC MENNONITE CONFERENCE</a>
           </div>
         </div>
       </div>
