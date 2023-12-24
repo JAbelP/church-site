@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Text from "../textComponents/text";
 
 function MiddleEyeCatch({ title, desc }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -26,7 +27,7 @@ function MiddleEyeCatch({ title, desc }) {
   const backGroundText = {
     backdropFilter: "blur(10px)", // Adjust the blur value as needed
     borderRadius: "1rem", // Adjust the radius as needed to control the roundness of the blur
-    opacity: isHovered ? .5 : 0, // Make it visible when isHovered is true, otherwise set opacity to 0
+    opacity: isHovered ? 0.5 : 0, // Make it visible when isHovered is true, otherwise set opacity to 0
   };
 
   return (
@@ -36,10 +37,22 @@ function MiddleEyeCatch({ title, desc }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="w-full h-full rounded-3xl pt-5 pl-5 relative" style={overlayStyles}>
-        <p className="text-4xl font-bold mb-5 opacity-100 text-white absolute" style={backGroundText}>{title}</p>
-        <p className="text-4xl font-bold mb-5 opacity-100 text-white">{title}</p>
-        <p className="font-medium text-3xl text-white">{desc}</p>
+      <div
+        className="w-full h-full rounded-3xl pt-5 pl-5 relative"
+        style={overlayStyles}
+      >
+        <div
+          className="text-4xl font-bold mb-5 opacity-100 text-white absolute"
+          style={backGroundText}
+        >
+          <Text aText={title}/>
+        </div>
+        <div className="text-4xl font-bold mb-5 opacity-100 text-white">
+          <Text aText={title}/>
+        </div>
+        <div className="font-medium text-3xl text-white">
+          <Text aText={desc} />
+        </div>
       </div>
     </div>
   );

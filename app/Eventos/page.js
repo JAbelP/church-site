@@ -38,6 +38,11 @@ const Events = [
   },
 ];
 
+export const metadata = {
+  title: "Eventos",
+  description: "Únete a nuestros eventos",
+};
+
 export default function Home() {
   return (
     <main className="bg-white h-fit w-full flex flex-col text-black">

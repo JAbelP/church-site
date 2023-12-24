@@ -12,6 +12,11 @@ import LanguageSelector from "../component/flagComponents/flagSelector";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../font/TrajanProR.ttf" });
 
+export const metadata = {
+  title: 'Soy Nuevo',
+  description: 'Únase a nuestra Iglesia',
+}
+ 
 
 export default function Home() {
   // set up for reCaptcha
@@ -230,10 +235,12 @@ export default function Home() {
                   {/* how did you hear about us? */}
                   {/* would like to */}
                   <div className="mb-4">
-                  <div className="block text-gray-700 font-bold my-2 capitalize">
-
-                  <LabelText aText={"I would like to..."} htmlFor={"wouldLikeTo"} />
-                  </div>
+                    <div className="block text-gray-700 font-bold my-2 capitalize">
+                      <LabelText
+                        aText={"I would like to..."}
+                        htmlFor={"wouldLikeTo"}
+                      />
+                    </div>
                     <select
                       id="wouldLikeTo"
                       className="border rounded-lg px-3 py-2 w-[220.400px]"

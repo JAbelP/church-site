@@ -71,9 +71,9 @@ export const LanguageContextProvider = ({ children }) => {
         "Capturar a la juventud a través del amor de Jesús de modo que puedan reconocer el papel que juegan dentro de la iglesia y la sociedad, proporcionándoles las herramientas necesarias para poder enfrentar cualquier situación en la vida y salir más que vencedores en el nombre de nuestro Señor Jesucristo, además puedan entender el llamado de Dios en sus vidas y que sean jóvenes que impacten la sociedad donde viven con una vida recta delante de Dios.":"Capture youth through the love of Jesus so that they can recognize the role they play within the church and society, providing them with the necessary tools to be able to face any situation in life and come out more than conquerors in the name of our Lord Jesus Christ, they can also understand the call of God in their lives and be young people who impact the society where they live with a righteous life before God.",
         "Tener un ministerio de niños efectivo con un crecimiento de carácter espiritual, trasformador, innovador y creciente, llevando al niño a través de la enseñanza a que ame a Jesús y sea lleno del Espíritu Santo":"Have an effective children's ministry with a spiritual, transformative, innovative and growing growth, leading the child through teaching to love Jesus and be filled with the Holy Spirit",
         "- Mateo 11:28":"Matthew 11:28",
-        "Vengan a mí todos ustedes que están cansados y agobiados, y yo les daré descanso.":"Come to me, all you who are weary and burdened, and I will give you rest."
-
-      
+        "Vengan a mí todos ustedes que están cansados y agobiados, y yo les daré descanso.":"Come to me, all you who are weary and burdened, and I will give you rest.",
+        "-Miqueas 6:8":"-Micah 6:8",
+        "Él te ha declarado, oh hombre, lo que es bueno. ¿Y qué es lo que demanda el Señor de ti, sino solo practicar la justicia, amar la misericordia, y andar humildemente con tu Dios?":"He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?"
       },
       es: {
         Liderazgo: "Liderazgo",
@@ -115,10 +115,22 @@ export const LanguageContextProvider = ({ children }) => {
         "I would like to...":"Me gustaría...",
         "Do You Have a Petition?":"¿Tiene una petición?",
         "Submit":"Someter",
+        "Select Gender":"Seleccione género",
+        "Male":"Hombre",
+        "Female":"Mujer",
+        "Select An Option":"Seleccione una opción",
+        "Friend":"Amigo/a",
+        "Evangalism":"Evangelización",
+        "Join The Church":"Únete a la iglesia",
+        "Convert":"Convertirme",
+        "Talk To Someone":"Habla con alguien",
+
+
+
+
 
       },
     };
-    console.log(translations[language][key]);
     return translations[language][key] || key;
   };
 

@@ -11,6 +11,11 @@ import LanguageSelector from "../component/flagComponents/flagSelector";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 
+export const metadata = {
+  title: 'Quienes Somos',
+  description: 'Quienes Somos Nosotros',
+}
+
 export default function Home() {
   return (
     <main className={ebG.className}>

@@ -19,6 +19,12 @@ import Women from "../../public/Ministries/Women_Prayer.webp";
 import Children from "../../public/Ministries/childPraying.jpg";
 
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+
+export const metadata = {
+  title: "Ministerios",
+  description: "Conozca Más Sobre Nuestros Ministerios",
+};
+
 const mini = [
   {
     title: "Evangelismo",
@@ -89,11 +95,11 @@ export default function Home() {
         <div className="lg:m-auto mt-28">
           <NewMember />
         </div>
-        <LanguageSelector/>
-          <Header />
+        <LanguageSelector />
+        <Header />
         <div className={CopperplateBold.className}>
           <div className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-            <Text aText={'Ministerios'}/>
+            <Text aText={"Ministerios"} />
           </div>
         </div>
         <div className="flex flex-col items-center">

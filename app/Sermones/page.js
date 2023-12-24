@@ -6,6 +6,10 @@ import localFont from "next/font/local";
 
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 
+export const metadata = {
+  title: 'Sermones',
+  description: 'Escuche Sermones Pasados',
+}
 
 export default function Home() {
   return (

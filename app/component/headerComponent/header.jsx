@@ -45,6 +45,7 @@ function Header() {
         </div>
       </div>
       {/* Full Sized Header */}
+      
       <div
         className="absolute top-[3.5rem] visible lg:invisible z-30"
         style={{ right: "1.5rem", top: "38px" }}

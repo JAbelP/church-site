@@ -16,6 +16,11 @@ import Text from "../component/textComponents/text";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 
+export const metadata = {
+  title: "Liderazgo",
+  description: "Conozca el liderazgo",
+};
+
 export default function Home() {
   return (
     <main className={ebG.className}>
