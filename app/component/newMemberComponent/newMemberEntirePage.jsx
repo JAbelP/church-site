@@ -1,22 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import Header from "../component/headerComponent/header";
-import Footer from "../component/footerComponent/footer";
+import Header from "../headerComponent/header";
+import Footer from "../footerComponent/footer";
 import localFont from "next/font/local";
 import Script from "next/script";
 import { EB_Garamond } from "next/font/google";
-import Text from "../component/textComponents/text";
-import HeaderText from "../component/textComponents/HeaderText";
-import LabelText from "../component/textComponents/Labeltext";
-import LanguageSelector from "../component/flagComponents/flagSelector";
+import Text from "../textComponents/text";
+import HeaderText from "../textComponents/HeaderText";
+import LabelText from "../textComponents/Labeltext";
+import LanguageSelector from "../flagComponents/flagSelector";
 const ebG = EB_Garamond({ subsets: ["latin"] });
-const trajanProFont = localFont({ src: "../../font/TrajanProR.ttf" });
+const trajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
-export const metadata = {
-  title: 'Soy Nuevo',
-  description: 'Únase a nuestra Iglesia',
-}
- 
 
 export default function EntirePage() {
   // set up for reCaptcha
