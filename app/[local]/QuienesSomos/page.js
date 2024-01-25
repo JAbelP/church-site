@@ -7,6 +7,7 @@ import Image1 from "@/public/QuienesSomosSVG/middleEyeCatch.svg"
 import localFont from "next/font/local";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
+import { useTranslations } from "next-intl";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
@@ -17,6 +18,9 @@ export const metadata = {
 }
 
 export default function Home() {
+  const t = useTranslations("WhoAreWe");
+
+
   return (
     <main className={ebG.className}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
@@ -30,25 +34,22 @@ export default function Home() {
         <div className="flex flex-col text-center items-center mt-5">
           <div className={CopperplateBold.className}>
             <div className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-              <Text aText={"Quienes Somos?"} />
+              {t('whoAreWe')}
             </div>
           </div>
           <h1 className="font-extrabold text-6xl pb-4">
-            <Text aText={"MISIÓN"} />
+          {t('Mission')}
           </h1>
           <div className="text-3xl pb-8">
-            <Text aText={"Somos una Iglesia que Ama y Restaura"} />
+          {t('WeAreAChurch')}
           </div>
           <div>
             <h1 className="font-extrabold text-6xl pb-4">
-              <Text aText={"VISIÓN"} />
+            {t('Vision')}
             </h1>
             <p className="text-3xl pb-8">
-              <Text
-                aText={
-                  "Evangelizar y Discipular a través del Sistema de Grupos Familiares la ciudad, mediante la formación de un Ministerio Hispano, haciendo de cada cristiano un discípulo."
-                }
-              />
+            {t('Evangelize and Disciple through the city')}
+              
             </p>
           </div>
           <Image src={Image1} alt="Beliefs" />

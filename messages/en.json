@@ -36,6 +36,14 @@
     },
     "Sermons":{
         "Sermons":"Sermons"
+    },
+    "WhoAreWe":{
+        "whoAreWe":"Who Are We?",
+        "Mission":"Mission",
+        "WeAreAChurch":"We are a Church that Loves and Restores",
+        "Vision":"Our Vision",
+        "Evangelize and Disciple through the city":"Evangelize and Disciple through the city's Family Group System, through the formation of a Hispanic Ministry, making each Christian a disciple.",
+        "Example":"Example"
     }
 
 }
