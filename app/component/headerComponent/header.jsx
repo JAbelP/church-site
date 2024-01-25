@@ -53,55 +53,18 @@ function Header({headerTitles}) {
           menuOpen ? "-translate-x-0" : "translate-x-full"
         } text-center text-5xl pt-36`}
       >
-        <ul>
+      <ul>
+        {headerTitles.map((header) =>{
+          return (
           <li className="pb-10">
-            <Link href={"/"}>
+            <Link href={header.Link}>
               <div onClick={handleMenuClick}>
-                <Text aText={"Casa"} />
+              {header.Name}
               </div>
             </Link>
-          </li>
-
-          <li className="pb-10">
-            <Link href={"/QuienesSomos"}>
-              <div onClick={handleMenuClick}>
-                <Text aText={"Quienes Somos"} />
-              </div>
-            </Link>
-          </li>
-
-          <li className="pb-10">
-            <Link href={"/Liderazgo"}>
-              <div onClick={handleMenuClick}>
-                <Text aText={"Liderazgo"} />
-              </div>
-            </Link>
-          </li>
-
-          <li className="pb-10">
-            <Link href={"/Ministerios"}>
-              <div onClick={handleMenuClick}>
-                <Text aText={"Ministerios"} />
-              </div>
-            </Link>
-          </li>
-
-          <li className="pb-10">
-            <Link href={"/Sermones"}>
-              <div onClick={handleMenuClick}>
-                <Text aText={"Sermones"} />
-              </div>
-            </Link>
-          </li>
-
-          <li className="pb-10">
-            <Link href={"/Ofrenda"}>
-              <div onClick={handleMenuClick}>
-                <Text aText={"Ofrenda"} />
-              </div>
-            </Link>
-          </li>
-        </ul>
+          </li>)
+        })}
+      </ul>
       </div>
       <div
         onClick={handleMenuClick}
