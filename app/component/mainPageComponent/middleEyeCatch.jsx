@@ -45,13 +45,13 @@ function MiddleEyeCatch({ title, desc }) {
           className="text-4xl font-bold mb-5 opacity-100 text-white absolute"
           style={backGroundText}
         >
-          <Text aText={title}/>
+          {title}
         </div>
         <div className="text-4xl font-bold mb-5 opacity-100 text-white">
-          <Text aText={title}/>
+          {title}
         </div>
         <div className="font-medium text-3xl text-white">
-          <Text aText={desc} />
+          {desc}
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import Text from "../textComponents/text";
 import HeaderText from "../textComponents/HeaderText";
 import LabelText from "../textComponents/Labeltext";
 import LanguageSelector from "../flagComponents/flagSelector";
+import { useTranslations } from "next-intl";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 

@@ -1,9 +1,9 @@
-"use client";
-import { useLanguageContext } from "../flagComponents/LanguageContext";
+// "use client";
+// import { useLanguageContext } from "../flagComponents/LanguageContext";
 
-function LabelText({ aText, htmlFor }) {
-  const { translate } = useLanguageContext();
-  return <label htmlFor={htmlFor}>{translate(aText)}</label>;
-}
+// function LabelText({ aText, htmlFor }) {
+//   const { translate } = useLanguageContext();
+//   return <label htmlFor={htmlFor}>{translate(aText)}</label>;
+// }
 
-export default LabelText;
+// export default LabelText;

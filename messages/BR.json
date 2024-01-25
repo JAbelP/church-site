@@ -1,0 +1,114 @@
+{
+  "Home": {
+    "title": "Exemplo de Título em Inglês",
+    "Leadership": "LIDERANÇA",
+    "About Us": "SOBRE NÓS",
+    "Bible Verse": "Ele te declarou, ó homem, o que é bom; e o que o Senhor pede de ti, senão que pratiques a justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "Bible Verse Cite": "-Miquéias 6:8",
+    "Ministries": "MINISTÉRIOS"
+  },
+  "NewMembers": {
+    "About You": "Sobre Você",
+    "Name": "Nome",
+    "Age": "Idade",
+    "Gender": "Gênero",
+    "Select Gender": "Selecionar Gênero",
+    "Male": "Masculino",
+    "Female": "Feminino",
+    "Contact Information": "Informações de Contato",
+    "Phone": "Telefone",
+    "Email": "E-mail",
+    "Additional Information": "Informações Adicionais",
+    "How Did You Hear": "Como você nos conheceu?",
+    "Select An Option": "Selecionar uma Opção",
+    "Evangalism": "Evangelismo",
+    "Friend": "Amigo",
+    "Facebook": "Facebook",
+    "I Would Like To": "Eu gostaria de...",
+    "Join The Church": "Juntar-se à Igreja",
+    "Convert": "Converter-me",
+    "Talk To Someone": "Falar com Alguém",
+    "Do You Have a Petition?": "Você tem uma Petição?",
+    "Submit": "Enviar",
+    "Bible Verse": "Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei.",
+    "Bible Verse Cite": "- Mateus 11:28",
+    "Example": "Sobre Você"
+  },
+  "Sermons": {
+    "Sermons": "Sermões"
+  },
+  "WhoAreWe": {
+    "whoAreWe": "Quem Somos Nós?",
+    "Mission": "Missão",
+    "WeAreAChurch": "Somos uma Igreja que Ama e Restaura",
+    "Vision": "Nossa Visão",
+    "Evangelize and Disciple through the city": "Evangelizar e discipular através do Sistema de Grupos Familiares da cidade, através da formação de um Ministério Hispano, fazendo de cada cristão um discípulo.",
+    "Example": "Exemplo"
+  },
+  "Minstries": {
+    "example1": "exemplo",
+    "example2": "exemplo",
+    "Minstries": "Ministérios",
+    "Evenglism": "Evangelismo",
+    "Small Health Groups": "Pequenos Grupos de Saúde",
+    "WORSHIP AND PRAISE": "ADORACÃO E LOUVOR",
+    "CHRISTIAN EDUCATION": "EDUCAÇÃO CRISTÃ",
+    "MISSIONS": "MISSÕES",
+    "PRAYER": "ORAÇÃO",
+    "PASTORAL COUNSELING": "CONSELHARIA PASTORAL",
+    "COUPLES MINISTRY": "MINISTÉRIO DE CASAIS",
+    "MEN'S MINISTRY": "MINISTÉRIO DOS HOMENS",
+    "WOMEN'S MINISTRY": "MINISTÉRIO DAS MULHERES",
+    "TEENS'S MINISTRY": "MINISTÉRIO DOS JOVENS",
+    "CHILDREN'S MINISTRY": "MINISTÉRIO INFANTIL",
+    "Evangelization Desc": "A Evangelização, ou Evangelismo, é a missão e função principal da Igreja. Consiste em levar as Boas Novas de Jesus Cristo àqueles que, por não o conhecerem, estão perdendo a oportunidade de viver uma vida abundante e serem salvos. A dinâmica de evangelizar surge da experiência de ter sido reconciliado com Deus. Portanto, evangelizar é basicamente a tarefa de todos os cristãos, o tempo todo e em tudo o que fazem. Cristo enviou todos os crentes ao redor do mundo para fazer discípulos.",
+    "Worship and Praise Desc": "No ato de adoração, enriquecemos nossa vida espiritual, pois a vida de Deus nos é oferecida em Cristo, que está presente na adoração. A adoração não é o objetivo final da vida cristã, mas é a função da igreja e dos crentes, que nutre e unifica todas as outras funções do Corpo de Cristo.",
+    "Christian Education Desc" : "A Educação Cristã visa proporcionar e facilitar aqueles processos e experiências necessários, para que as pessoas possam estudar, examinar e refletir sobre os conteúdos de sua fé cristã, especialmente no que diz respeito ao amor redentor de Deus revelado em Jesus Cristo, para que cada pessoa possa responder em fé e amor ao Senhor, compreender a si mesma e sua situação humana, e, unida à comunidade cristã, viver no Espírito todos os seus relacionamentos humanos e cumprir seu discipulado no mundo, perseverando na esperança cristã.",
+    "Missions Desc" : "Nosso Senhor Jesus Cristo ordenou que seu Evangelho fosse pregado até os confins da terra. A responsabilidade missionária da igreja é inevitável. Todos temos uma parte nessa obrigação, alguns participando diretamente como missionários em diferentes funções, outros contribuindo com nossos recursos para tornar esse trabalho possível. Portanto, fazemos missão como indivíduos, na congregação local e através das instituições e organizações de nossa igreja que têm essa tarefa. Nossa principal responsabilidade de apoio missionário é através da Iglesia Cristiana Luz Y Vida MC Inc. e das entidades eclesiásticas que eles apoiam.",
+    "Prayer Desc": "O Ministério da Oração é essencialmente importante na existência e manutenção da vida espiritual da Igreja. Este ministério promoverá, estimulará e inspirará constantemente o corpo corporativo da Igreja a manter viva a oração em todos os assuntos e em todos os momentos, assim como o Senhor nos ensinou a orar sem cessar.",
+    "Pastoral Counseling Desc" :"O aconselhamento é dado pelo Pastor Sênior e será considerado um conselho do Senhor desde que esse conselho seja bíblico, de caráter saudável, esteja alinhado com a visão e missão da igreja e estimule a unidade entre os irmãos. Todas as reuniões de aconselhamento serão realizadas com maior confidencialidade.",
+    "Couples Ministry Desc":"Trazer cura a todos os casais em nossa igreja e outros casais relacionados, capacitando-os e equipando-os para suas vidas de casal em Cristo Jesus.",
+    "Men's Ministry Desc":"O Ministério dos Homens é a busca ativa de homens para conectá-los a Deus, à Sua Palavra e a outros homens, com o propósito de ganhar, desenvolver e treinar o homem de Deus em Cristo.",
+    "Women's Ministry Desc" :"Promover o papel das mulheres de uma perspectiva cristã, fortalecendo as diferentes áreas de suas vidas. Poder se aproximar das mulheres, sejam solteiras, casadas, separadas e/ou divorciadas, para que tenham um encontro com Cristo. E que participemos ativamente e sejamos representantes fiéis de Deus na igreja, em nossos lares e em nossa comunidade.",
+    "Teen's Ministry Desc": "Capturar os jovens através do amor de Jesus para que possam reconhecer o papel que desempenham dentro da igreja e da sociedade, proporcionando-lhes as ferramentas necessárias para enfrentar qualquer situação na vida e sair mais que vencedores em nome de nosso Senhor Jesus Cristo. Eles também podem compreender o chamado de Deus em suas vidas e serem jovens que impactam a sociedade onde vivem com uma vida justa diante de Deus.",
+    "Children's Ministry Desc":"Ter um ministério infantil eficaz com crescimento espiritual, transformador, inovador e crescente, guiando a criança através do ensino para amar a Jesus e ser cheia do Espírito Santo",
+    "example3": "exemplo"
+  },
+  "Leadeship":{
+    "Leadership":"Liderança",
+    "Pastors":"Pastores",
+    "Associate Pastores":"Pastores Associados",
+    "Decons":"Diáconos"
+  },
+  "Events":{
+    "event1":"Grupo de Adoração",
+    "eventTime1":"Domingo 1:30 PM",
+    "eventLocation1":"2318 Cilantro Dr. Orlando FL 32837",
+    "event2":"Pequeno Grupo em Português",
+    "eventTime2":"Quarta-feira 19 de julho 7:30 PM",
+    "event3":"Estudo Bíblico",
+    "eventTime3":"Sexta-feira 7:30 PM",
+    "event4":"RETIRO DE ORAÇÃO",
+    "eventTime4":"Sábado 29 de julho 9:00 AM - 1:00 PM",
+    "Events":"Eventos"
+  },
+  "Header":{
+    "Who Are We":"Quem Somos Nós",
+    "Leadership":"Liderança",
+    "Ministries":"Ministérios",
+    "Events":"Eventos",
+    "Sermons":"Sermões",
+    "Offerings":"Ofertas",
+    "Example1":"Exemplo1",
+    "Example2":"Exemplo2"
+  },
+  "newMemberComponent":{
+    "Call To Action":"Junte-se a Nós Hoje"
+  },
+  "Footer":{
+    "Visit":"Visite-nos",
+    "Hours":"Horários",
+    "Time1":"Domingo 1:30 PM",
+    "Time2":"Sexta-feira 7:30 PM"
+  }
+}
