@@ -4,9 +4,7 @@ import Footer from "../../component/footerComponent/footer";
 import localFont from "next/font/local";
 import { useTranslations } from "next-intl";
 
-
-
-const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 export const metadata = {
   title: 'Sermones',
