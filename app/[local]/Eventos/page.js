@@ -11,6 +11,7 @@ import a from "@/public/Events/Singing.webp"
 import GPS from "@/public/Events/GPS.jpg";
 import Study from "@/public/Ministries/Study.jpg";
 import Pray from "@/public/Ministries/Prayer.jpg";
+import Adoracion from "@/public/Ministries/Prayer.jpg";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
  
