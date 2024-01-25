@@ -16,11 +16,11 @@ function Eventos({ eventName, eventTime, eventLocation, eventImage }) {
       <div className="ml-8">
         <div className={CopperplateBold.className}>
           <div className="text-2xl tracking-widest mb-4 w-[424px]">
-            <Text aText={eventName} />
+{eventName}
           </div>
         </div>
         <div className="text-xl tracking-tight mb-4 w-[424px]">
-          <Text aText={eventTime} />
+          {eventTime}
         </div>
         {eventLocation && (
           <p className="text-xl tracking-tight mb-4 w-[424px]">
