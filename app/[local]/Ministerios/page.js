@@ -1,10 +1,10 @@
-import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent/footer";
-import EyeCatch from "../component/ministeriosComponents/eyeCatch";
+import Header from "../../component/headerComponent/header";
+import NewMember from "../../component/newMemberComponent/newMember";
+import Footer from "../../component/footerComponent/footer";
+import EyeCatch from "../../component/ministeriosComponents/eyeCatch";
 import localFont from "next/font/local";
-import Text from "../component/textComponents/text";
-import LanguageSelector from "../component/flagComponents/flagSelector";
+import Text from "../../component/textComponents/text";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
 // Images
 import Evangelismo from "../../public/Ministries/evangelismo.jpeg";
 import GPS from "../../public/Ministries/GPS.jpg";

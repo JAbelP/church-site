@@ -1,17 +1,17 @@
-import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent/footer";
+import Header from "../../component/headerComponent/header";
+import NewMember from "../../component/newMemberComponent/newMember";
+import Footer from "../../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import localFont from "next/font/local";
-import Eventos from "../component/eventosComponents/eventos";
+import Eventos from "../../component/eventosComponents/eventos";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
 import Adoracion from "../../public/Events/Singing.webp";
 import GPS from "../../public/Events/GPS.jpg";
 import Study from "../../public/Ministries/Study.jpg";
 import Pray from "../../public/Ministries/Prayer.jpg";
-import Text from "../component/textComponents/text";
-import LanguageSelector from "../component/flagComponents/flagSelector";
+import Text from "../../component/textComponents/text";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
  
 const Events = [
   {

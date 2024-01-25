@@ -1,6 +1,6 @@
-import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent/footer";
+import Header from "../../component/headerComponent/header";
+import NewMember from "../../component/newMemberComponent/newMember";
+import Footer from "../../component/footerComponent/footer";
 import localFont from "next/font/local";
 
 

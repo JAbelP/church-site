@@ -1,17 +1,17 @@
-import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent/footer";
+import Header from "../../component/headerComponent/header";
+import NewMember from "../../component/newMemberComponent/newMember";
+import Footer from "../../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
-import MainEyeCatch from "../component/ministeriosComponents/mainEyeCatchLiderazgo";
-import SubEyeCatch from "../component/ministeriosComponents/subEyeCatch";
+import MainEyeCatch from "../../component/ministeriosComponents/mainEyeCatchLiderazgo";
+import SubEyeCatch from "../../component/ministeriosComponents/subEyeCatch";
 import TestImage1 from "../../public/Leadership/TestImage.png";
 import Image1 from "../../public/Leadership/TioyTia1.jpg";
 import Image2 from "../../public/Leadership/Colon.jpg";
 import Image3 from "../../public/Leadership/Wellington.jpg";
 import Image4 from "../../public/Leadership/DeRosa.jpg";
 import localFont from "next/font/local";
-import LanguageSelector from "../component/flagComponents/flagSelector";
-import Text from "../component/textComponents/text";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
+import Text from "../../component/textComponents/text";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });

@@ -1,15 +1,15 @@
 import Image from "next/image";
-import Header from "../component/headerComponent/header";
-import NewMember from "../component/newMemberComponent/newMember";
-import Footer from "../component/footerComponent/footer";
+import Header from "../../component/headerComponent/header";
+import NewMember from "../../component/newMemberComponent/newMember";
+import Footer from "../../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
-import Image1 from "../../public/QuienesSomosSVG/middleEyeCatch.svg";
+import Image1 from "@/public/QuienesSomosSVG/middleEyeCatch.svg"
 import localFont from "next/font/local";
-import Text from "../component/textComponents/text";
-import LanguageSelector from "../component/flagComponents/flagSelector";
+import Text from "../../component/textComponents/text";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
-const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 export const metadata = {
   title: 'Quienes Somos',
