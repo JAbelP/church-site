@@ -80,5 +80,36 @@
     "Associate Pastores":"Associate Pastores",
     "Decons":"Decons"
 
+  },
+  "Events":{
+    "event1":"Worship Group",
+    "eventTime1":"Sunday 1:30 PM",
+    "eventLocation1":"2318 Cilantro Dr. Orlando FL 32837",
+    "event2":"Small Group In Portuguese",
+    "eventTime2":"Wednesday July 19 7:30 PM",
+    "event3":"Bible Study",
+    "eventTime3":"Friday 7:30 PM",
+    "event4":"PRAYER RETREAT",
+    "eventTime4":"Saturday July 29 9:00 AM - 1:00 PM",
+    "Events":"Events"
+  },
+  "Header":{
+    "Who Are We":"Who Are We",
+    "Leadership":"Leadership",
+    "Ministries":"Ministries",
+    "Events":"Events",
+    "Sermons":"Sermons",
+    "Offerings":"Offerings",
+    "Example1":"Example1",
+    "Example2":"Example2"
+  },
+  "newMemberComponent":{
+    "Call To Action":"Join Us Today"
+  },
+  "Footer":{
+    "Visit":"Visit Us",
+    "Hours":"Hours",
+    "Time1":"Sunday 1:30 PM",
+    "Time2":"Friday 7:30 PM"
   }
 }

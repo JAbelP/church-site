@@ -20,6 +20,15 @@ export const metadata = {
 
 export default function Home() {
   const t = useTranslations("WhoAreWe");
+  const headerTranslations = useTranslations("Header");
+  const headerTitles = [
+    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
+    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
+    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
+    { Name: headerTranslations("Events"), Link: "/Eventos" },
+    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+  ];
 
 
   return (
@@ -29,7 +38,7 @@ export default function Home() {
           <NewMember />
         </div>
         <div className="mt-13 md:mt-0">
-          <Header />
+          <Header headerTitles={headerTitles}/>
         </div>
         <LanguageSelector />
         <div className="flex flex-col text-center items-center mt-5">

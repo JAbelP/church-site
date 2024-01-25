@@ -2,10 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { EB_Garamond } from "next/font/google";
 import Text from "../textComponents/text";
+import { useTranslations } from "next-intl";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
 function Footer() {
+  const t = useTranslations('Footer');
   return (
     <div className={ebG.className}>
       <div className="text-black mt-6">
@@ -27,17 +29,17 @@ function Footer() {
             {/* Time and dates  */}
             <div className="w-[395px] mt-5 ">
               <div className="mb-4">
-                <div className="underline"><Text aText={'Visítanos'}/></div>
+                <div className="underline">{t('Visit')}</div>
                 <p>7600 Winegard Rd. Orlando, FL 32809</p>
               </div>
               <div className="mb-4">
-                <div className="underline "><Text aText={'Horas'}/></div>
+                <div className="underline ">{t('Hours')}</div>
                 <div>
                   <div>
-                    <Text aText={"Domingo 1:30 PM"} />
+                  {t('Time1')}
                   </div>
                   <div>
-                    <Text aText={"Viernes 7:30 PM"} />
+                  {t('Time2')}
                   </div>
                 </div>
               </div>

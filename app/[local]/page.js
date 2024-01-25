@@ -12,15 +12,24 @@ const ebG = EB_Garamond({ subsets: ["latin"] });
 export default function Home() {
   const t = useTranslations("Home");
 
+  const headerTranslations = useTranslations("Header");
+  const headerTitles = [
+    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
+    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
+    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
+    { Name: headerTranslations("Events"), Link: "/Eventos" },
+    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+  ];
+
   return (
     <main className="bg-white lg:h-fit lg:w-full h-auto w-screen flex flex-col text-black overflow-clip">
-      <h1>{t("title")}</h1>
       <LanguageSelector />
       <div className="mt-28 mx-auto md:mt-0">
         <NewMember />
       </div>
       <div className="mt-13 md:mt-0">
-        <Header />
+        <Header headerTitles={headerTitles}/>
       </div>
       <div className="  mt-12 mb-10 md:my-8 flex flex-col md:flex-row md:justify-center gap-y-7">
         <MiddleEyeCatch title={t("Leadership")} desc={"Example Example"} />

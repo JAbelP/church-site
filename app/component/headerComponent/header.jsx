@@ -8,21 +8,14 @@ import Text from "../textComponents/text";
 // Load the font and assign it to a constant in the module scope
 const TrajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
-function Header() {
+
+function Header({headerTitles}) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const headerTitles = [
-    { Name: "Quienes Somos", Link: "/QuienesSomos" },
-    { Name: "Liderazgo", Link: "/Liderazgo" },
-    { Name: "Ministerios", Link: "/Ministerios" },
-    { Name: "Eventos", Link: "/Eventos" },
-    { Name: "Sermones", Link: "/Sermones" },
-    { Name: "Ofrenda", Link: "/Ofrenda" },
-  ];
 
   return (
     <div>
@@ -36,7 +29,7 @@ function Header() {
                   <p
                     className={`text-black text-3xl font-bold font-[Trajan Pro] underline capitalize tracking-widest`}
                   >
-                    <Text aText={item.Name} />
+                  {item.Name}
                   </p>
                 </div>
               </Link>

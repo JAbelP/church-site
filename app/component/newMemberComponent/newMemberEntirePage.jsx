@@ -99,6 +99,17 @@ export default function EntirePage({
         });
     });
   };
+
+  const headerTranslations = useTranslations("Header");
+  const headerTitles = [
+    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
+    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
+    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
+    { Name: headerTranslations("Events"), Link: "/Eventos" },
+    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+  ];
+
   return (
     <main className={ebG.className}>
       <Script
@@ -106,7 +117,7 @@ export default function EntirePage({
       />
       <div className="bg-white h-fit w-full flex flex-col text-black">
         {/* <div className="m-auto"></div> */}
-        <Header />
+        <Header headerTitles={headerTitles} />
         <LanguageSelector />
         <div className="flex flex-row mb-16 pl-16 text-xl lg:mt-0 mt-32">
           {/* Left Hand Side */}

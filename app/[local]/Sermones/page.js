@@ -13,6 +13,15 @@ export const metadata = {
 
 export default function Home() {
   const t = useTranslations("Sermons");
+  const headerTranslations = useTranslations("Header");
+  const headerTitles = [
+    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
+    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
+    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
+    { Name: headerTranslations("Events"), Link: "/Eventos" },
+    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+  ];
 
   return (
     <main>
@@ -20,7 +29,7 @@ export default function Home() {
         <div className="lg:m-auto mt-28">
           <NewMember />
         </div>
-          <Header />
+          <Header headerTitles={headerTitles}/>
         <div className={CopperplateBold.className}>
           <p className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
             {t('Sermons')}

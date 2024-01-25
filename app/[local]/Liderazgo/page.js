@@ -21,6 +21,15 @@ export const metadata = {
 
 export default function Home() {
   const t = useTranslations("Leadeship");
+  const headerTranslations = useTranslations("Header");
+  const headerTitles = [
+    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
+    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
+    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
+    { Name: headerTranslations("Events"), Link: "/Eventos" },
+    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+  ];
   return (
     <main className={ebG.className}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
@@ -29,7 +38,7 @@ export default function Home() {
         </div>
         <LanguageSelector />
         <div className="mt-13 md:mt-0">
-          <Header />
+          <Header headerTitles={headerTitles}/>
         </div>
 
         <div className={CopperplateBold.className}>
@@ -39,7 +48,6 @@ export default function Home() {
         </div>
 
         <div className="text-5xl font-medium tracking-widest mx-auto uppercase">
-          <Text aText={"pastores"} />
           {t('Pastors')}
         </div>
         <div className="flex flex-col">

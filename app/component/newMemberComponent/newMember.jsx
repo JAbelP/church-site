@@ -4,9 +4,11 @@ import heroBanner from "../../../public/SoyNuevoImage/OutSideTheChurch.jpg";
 import Image from "next/image";
 import { EB_Garamond } from "next/font/google";
 import Text from "../textComponents/text";
+import { useTranslations } from "next-intl";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 function NewMember() {
+  const t = useTranslations('newMemberComponent')
   return (
     <div className="bg-red-600 rounded-md mx-auto md:w-[1220px] md:min-h-[379px] w-3/4 flex flex-col justify-end relative">
       <Image
@@ -17,7 +19,7 @@ function NewMember() {
       <Link href={"/SoyNuevo"}>
         <button className="bg-sky-500 p-3 rounded-xl text-3xl absolute bottom-14 right-20 text-black">
           <div className={ebG.className}>
-            <Text aText={"Soy Nuevo"} />
+          {t('Call To Action')}
           </div>
         </button>
       </Link>
