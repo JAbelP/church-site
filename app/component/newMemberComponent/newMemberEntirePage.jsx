@@ -29,6 +29,7 @@ export default function EntirePage() {
 
   // Function to handle form submission
   const handleSubmit = (e) => {
+    
     e.preventDefault();
     // You can handle the form data submission here
     console.log("Name: ", name);
