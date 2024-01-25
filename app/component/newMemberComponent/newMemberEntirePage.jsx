@@ -12,8 +12,32 @@ import LanguageSelector from "../flagComponents/flagSelector";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
-
-export default function EntirePage() {
+export default function EntirePage({
+  aboutYouHeader,
+  nameText,
+  ageText,
+  genderText,
+  Male,
+  Female,
+  phoneText,
+  emailText,
+  Evangalism,
+  Facebook,
+  Convert,
+  selectGender,
+  contactInformation,
+  additionalInformation,
+  howDidYouHear,
+  selectAnOption,
+  iWouldLikeTo,
+  joinTheChurch,
+  talkToSomeone,
+  doYouHaveaPetition,
+  friend,
+  submitText,
+  bibleVerse,
+  bibleVerseCite,
+}) {
   // set up for reCaptcha
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
 
@@ -29,7 +53,6 @@ export default function EntirePage() {
 
   // Function to handle form submission
   const handleSubmit = (e) => {
-    
     e.preventDefault();
     // You can handle the form data submission here
     console.log("Name: ", name);
@@ -76,7 +99,6 @@ export default function EntirePage() {
         });
     });
   };
-
   return (
     <main className={ebG.className}>
       <Script
@@ -92,7 +114,8 @@ export default function EntirePage() {
             <div>
               <div className={trajanProFont.className}>
                 <div className="text-4xl font-extrabold mb-4">
-                  <HeaderText aText={"About You"} />
+                  {aboutYouHeader}
+                  {/* <HeaderText aText={"About You"} /> */}
                 </div>
               </div>
               <form onSubmit={handleSubmit}>
@@ -102,7 +125,7 @@ export default function EntirePage() {
                   {/* Name */}
                   <div className="mb-4">
                     <div className="block text-gray-700 font-bold mb-2">
-                      <LabelText htmlFor="name" aText={"Name"} />
+                      <label htmlFor="name">{nameText} </label>
                     </div>
                     <input
                       type="text"
@@ -118,7 +141,7 @@ export default function EntirePage() {
                   {/* Age */}
                   <div className="mb-4">
                     <div className="block text-gray-700 font-bold mb-2">
-                      <LabelText htmlFor={"age"} aText={"Age"} />
+                      <label htmlFor="age">{ageText}</label>
                     </div>
                     <input
                       type="number"
@@ -134,7 +157,7 @@ export default function EntirePage() {
                 {/* 2nd Row */}
                 <div className="mb-4">
                   <div className="block text-gray-700 font-bold mb-2">
-                    <LabelText htmlFor={"gender"} aText={"Gender"} />
+                    <label htmlFor={"gender"}>{genderText}</label>
                   </div>
                   <select
                     id="gender"
@@ -143,29 +166,23 @@ export default function EntirePage() {
                     onChange={(e) => setGender(e.target.value)}
                     required
                   >
-                    <option value="">
-                      <Text aText={"Select Gender"} />
-                    </option>
-                    <option value="Male">
-                      <Text aText={"Male"} />
-                    </option>
-                    <option value="Female">
-                      <Text aText={"Female"} />
-                    </option>
+                    <option value="">{selectGender}</option>
+                    <option value="Male">{Male}</option>
+                    <option value="Female">{Female}</option>
                   </select>
                 </div>
                 {/* 2nd Section */}
                 {/* First Row */}
                 <div className={trajanProFont.className}>
                   <div className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
-                    <HeaderText aText={"Contact Information"} />
+                    <h1>{contactInformation}</h1>
                   </div>
                 </div>
                 <div className=" flex lg:flex-row flex-col gap-x-8 ">
                   {/* Phone */}
                   <div className="mb-4">
                     <div className="block text-gray-700 font-bold mb-2">
-                      <LabelText htmlFor={"phone"} aText={"Phone"} />
+                      <label htmlFor="phone">{phoneText}</label>
                     </div>
                     <input
                       type="tel"
@@ -180,8 +197,8 @@ export default function EntirePage() {
 
                   {/* Email */}
                   <div className="mb-4">
-                    <div className="block text-gray-700 font-bold mb-2">
-                      <LabelText htmlFor={"email"} aText={"Email"} />
+                    <div className="block text-grasupy-700 font-bold mb-2">
+                      <label htmlFor={"email"}> {emailText}</label>
                     </div>
                     <input
                       type="email"
@@ -197,16 +214,13 @@ export default function EntirePage() {
                 {/* 3rd Section */}
                 <div className={trajanProFont.className}>
                   <div className="text-4xl font-extrabold mb-4 mt-12 lg:mt-6">
-                    <HeaderText aText={"Additional Information"} />
+                    <h1>{additionalInformation}</h1>
                   </div>
                 </div>
                 {/* how did you hear about us */}
                 <div className="mb-4">
                   <div className="block text-gray-700 font-bold mb-2 capitalize">
-                    <LabelText
-                      htmlFor={"heard"}
-                      aText={"How did you hear about us?"}
-                    />
+                    <label htmlFor="heard">{howDidYouHear}</label>
                   </div>
                   <select
                     id="heard"
@@ -215,27 +229,16 @@ export default function EntirePage() {
                     onChange={(e) => setHeard(e.target.value)}
                     required
                   >
-                    <option value="">
-                      <Text aText={"Select An Option"} />
-                    </option>
-                    <option value="Friend">
-                      <Text aText={"Friend"} />
-                    </option>
-                    <option value="Evangalism">
-                      <Text aText={"Evangalism"} />
-                    </option>
-                    <option value="Facebook">
-                      <Text aText={"Facebook"} />
-                    </option>
+                    <option value="">{selectAnOption}</option>
+                    <option value="Friend">{friend}</option>
+                    <option value="Evangalism">{Evangalism}</option>
+                    <option value="Facebook">{Facebook}</option>
                   </select>
                   {/* how did you hear about us? */}
                   {/* would like to */}
                   <div className="mb-4">
                     <div className="block text-gray-700 font-bold my-2 capitalize">
-                      <LabelText
-                        aText={"I would like to..."}
-                        htmlFor={"wouldLikeTo"}
-                      />
+                      <label htmlFor={"wouldLikeTo"}>{iWouldLikeTo}</label>
                     </div>
                     <select
                       id="wouldLikeTo"
@@ -244,18 +247,10 @@ export default function EntirePage() {
                       onChange={(e) => setWouldLikeTo(e.target.value)}
                       required
                     >
-                      <option value="">
-                        <Text aText={"Select An Option"} />
-                      </option>
-                      <option value="Join The Church">
-                        <Text aText={"Join The Church"} />
-                      </option>
-                      <option value="Convert">
-                        <Text aText={"Convert"} />
-                      </option>
-                      <option value="Talk To Someone">
-                        <Text aText={"Talk To Someone"} />
-                      </option>
+                      <option value="">{selectAnOption}</option>
+                      <option value="Join The Church">{joinTheChurch}</option>
+                      <option value="Convert">{Convert}</option>
+                      <option value="Talk To Someone">{talkToSomeone}</option>
                     </select>
                   </div>
                   {/* would like to */}
@@ -263,10 +258,7 @@ export default function EntirePage() {
                   <div className="mb-4">
                     <div className="mb-4">
                       <div className="block text-gray-700 font-bold mb-2">
-                        <LabelText
-                          htmlFor={"petition"}
-                          aText={"Do You Have a Petition?"}
-                        />
+                        <label htmlFor="petition">{doYouHaveaPetition}</label>
                       </div>
                       <textarea
                         id="petition"
@@ -283,7 +275,7 @@ export default function EntirePage() {
                     type="submit"
                     className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
                   >
-                    <Text aText="Submit" />
+                    {submitText}{" "}
                   </button>
                 </div>
               </form>
@@ -294,15 +286,10 @@ export default function EntirePage() {
             <div className="relative">
               <div className="w-[298px]">
                 <div className="text-[34px] capitalize leading-[70.38px]">
-                  <Text
-                    aText="Vengan a mí todos ustedes que están cansados y agobiados, y yo
-                  les daré descanso."
-                  />
+                  {bibleVerse}
                 </div>
               </div>
-              <div className="text-[51px]">
-                <Text aText={"- Mateo 11:28"} />
-              </div>
+              <div className="text-[51px]">{bibleVerseCite}</div>
             </div>
           </div>
 

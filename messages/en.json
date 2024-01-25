@@ -1,6 +1,6 @@
 {
     "Home": {
-        "title": "Swag",
+        "title": "Example English Jason Title",
         "Leadership": "LEADERSHIP",
         "About Us": "ABOUT US",
         "Bible Verse": "He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
@@ -8,6 +8,30 @@
         "Ministries":"MINISTRES"
     },
     "NewMembers":{
-        "Example":"Example"
+        "About You":"About You",
+        "Name":"Name",
+        "Age":"Age",
+        "Gender":"Gender",
+        "Select Gender":"Select Gender",
+        "Male":"Male",
+        "Female":"Female",
+        "Contact Information":"Contact Information",
+        "Phone":"Phone",
+        "Email":"Email",
+        "Additional Information":"Additional Information",
+        "How Did You Hear":"How Did You Hear About Us?",
+        "Select An Option":"Select An Option",
+        "Evangalism":"Evangalism",
+        "Friend":"Friend",
+        "Facebook":"Facebook",
+        "I Would Like To":"I Would Like To...",
+        "Join The Church":"Join The Church",
+        "Convert":"Convert",
+        "Talk To Someone":"Talk To Someone",
+        "Do You Have a Petition?":"Do You Have a Petition?",
+        "Submit":"Submit",
+        "Bible Verse":"Come to me, all who labor and are heavy laden, and I will give you rest.",
+        "Bible Verse Cite":"- Matthew 11:28",
+        "Example":"About You"
     }
 }
