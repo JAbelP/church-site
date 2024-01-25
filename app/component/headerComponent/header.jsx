@@ -56,7 +56,7 @@ function Header({headerTitles}) {
       <ul>
         {headerTitles.map((header) =>{
           return (
-          <li className="pb-10">
+          <li className="pb-10" key={header.Name}>
             <Link href={header.Link}>
               <div onClick={handleMenuClick}>
               {header.Name}
