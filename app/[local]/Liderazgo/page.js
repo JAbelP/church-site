@@ -14,7 +14,7 @@ import LanguageSelector from "../../component/flagComponents/flagSelector";
 import Text from "../../component/textComponents/text";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
-const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 export const metadata = {
   title: "Liderazgo",

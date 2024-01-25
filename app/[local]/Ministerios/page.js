@@ -18,7 +18,7 @@ import Men from "../../public/Ministries/Men_Prayer.jpg";
 import Women from "../../public/Ministries/Women_Prayer.webp";
 import Children from "../../public/Ministries/childPraying.jpg";
 import { useTranslations } from "next-intl";
-const CopperplateBold = localFont({ src: "../../../fontCopperplateBold.ttf" });
+const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 export const metadata = {
   title: "Ministerios",
