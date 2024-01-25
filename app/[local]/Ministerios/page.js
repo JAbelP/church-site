@@ -6,17 +6,17 @@ import localFont from "next/font/local";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 // Images
-import Evangelismo from "../../public/Ministries/evangelismo.jpeg";
-import GPS from "../../public/Ministries/GPS.jpg";
-import worship from "../../public/Ministries/worship.webp";
-import Study from "../../public/Ministries/Study.jpg";
-import mission from "../../public/Ministries/Mission.jpg";
-import prayer from "../../public/Ministries/Prayer.jpg";
-import Therapy from "../../public/Ministries/Pastoral Therapy.jpg";
-import Couples from "../../public/Ministries/CoupleTherapy.jpg";
-import Men from "../../public/Ministries/Men_Prayer.jpg";
-import Women from "../../public/Ministries/Women_Prayer.webp";
-import Children from "../../public/Ministries/childPraying.jpg";
+import Evangelismo from "@/public/Ministries/evangelismo.jpeg";
+import GPS from "@/public/Ministries/GPS.jpg";
+import worship from "@/public/Ministries/worship.webp";
+import Study from "@/public/Ministries/Study.jpg";
+import mission from "@/public/Ministries/Mission.jpg";
+import prayer from "@/public/Ministries/Prayer.jpg";
+import Therapy from "@/public/Ministries/Pastoral Therapy.jpg";
+import Couples from "@/public/Ministries/CoupleTherapy.jpg";
+import Men from "@/public/Ministries/Men_Prayer.jpg";
+import Women from "@/public/Ministries/Women_Prayer.webp";
+import Children from "@/public/Ministries/childPraying.jpg";
 import { useTranslations } from "next-intl";
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
