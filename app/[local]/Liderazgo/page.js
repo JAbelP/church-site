@@ -10,7 +10,7 @@ import Image4 from "@/public/Leadership/DeRosa.jpg";
 import localFont from "next/font/local";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 import Text from "../../component/textComponents/text";
-
+import { useTranslations } from "next-intl";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
@@ -20,6 +20,7 @@ export const metadata = {
 };
 
 export default function Home() {
+  const t = useTranslations("Leadeship");
   return (
     <main className={ebG.className}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
@@ -33,12 +34,13 @@ export default function Home() {
 
         <div className={CopperplateBold.className}>
           <div className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-            <Text aText={"Liderazgo"} />
+            {t('Leadership')}
           </div>
         </div>
 
         <div className="text-5xl font-medium tracking-widest mx-auto uppercase">
           <Text aText={"pastores"} />
+          {t('Pastors')}
         </div>
         <div className="flex flex-col">
           <div>
@@ -49,7 +51,7 @@ export default function Home() {
             />
           </div>
           <div className="text-4xl font-medium tracking-widest mx-auto uppercase">
-            <Text aText={"pastores Asociados"} />
+            {t('Associate Pastores')}
           </div>
           <div>
             <SubEyeCatch
@@ -62,7 +64,7 @@ export default function Home() {
 
         <div className=" mt-16">
           <div className=" mb-8 text-center  text-4xl font-medium tracking-widest">
-            <Text aText={"Decons"} />
+            {t('Decons')}
           </div>
           <div className="flex md:flex-row md:justify-evenly flex-col gap-y-16">
             <SubEyeCatch
