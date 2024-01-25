@@ -2,6 +2,8 @@ import Header from "../../component/headerComponent/header";
 import NewMember from "../../component/newMemberComponent/newMember";
 import Footer from "../../component/footerComponent/footer";
 import localFont from "next/font/local";
+import { useTranslations } from "next-intl";
+
 
 
 const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
@@ -12,6 +14,8 @@ export const metadata = {
 }
 
 export default function Home() {
+  const t = useTranslations("Sermons");
+
   return (
     <main>
       <div className="bg-white h-fit w-full flex flex-col text-black">
@@ -21,7 +25,7 @@ export default function Home() {
           <Header />
         <div className={CopperplateBold.className}>
           <p className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-            Sermones
+            {t('Sermons')}
           </p>
 
         </div>
