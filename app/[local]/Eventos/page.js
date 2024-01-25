@@ -5,7 +5,7 @@ import { EB_Garamond } from "next/font/google";
 import localFont from "next/font/local";
 import Eventos from "../../component/eventosComponents/eventos";
 const ebG = EB_Garamond({ subsets: ["latin"] });
-const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 import Adoracion from "../../public/Events/Singing.webp";
 import GPS from "../../public/Events/GPS.jpg";
 import Study from "../../public/Ministries/Study.jpg";

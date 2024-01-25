@@ -17,22 +17,23 @@ import Couples from "../../public/Ministries/CoupleTherapy.jpg";
 import Men from "../../public/Ministries/Men_Prayer.jpg";
 import Women from "../../public/Ministries/Women_Prayer.webp";
 import Children from "../../public/Ministries/childPraying.jpg";
-
-const CopperplateBold = localFont({ src: "../../font/CopperplateBold.ttf" });
+import { useTranslations } from "next-intl";
+const CopperplateBold = localFont({ src: "../../../fontCopperplateBold.ttf" });
 
 export const metadata = {
   title: "Ministerios",
   description: "Conozca Más Sobre Nuestros Ministerios",
 };
+const t = useTranslations("Minstries");
 
 const mini = [
   {
-    title: "Evangelismo",
-    desc: "La Evangelización O Evangelismo",
+    title: t('Evenglism'),
+    desc: t('Evangelization Or Evangelism'),
     imageLocation: Evangelismo,
   },
   {
-    title: "CÉLULAS GRUPOS PEQUEÑOS SALUDABLES (GPS)",
+    title: t('Evangelization Or Evangelism'),
     desc: "velar por el cuidado de los miembros de la congregación, procurando integrarlos a la vida total de la iglesia, en un clima de hermandad y amor cristiano.",
     imageLocation: GPS,
   },
