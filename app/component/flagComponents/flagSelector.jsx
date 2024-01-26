@@ -10,8 +10,6 @@ import { usePathname, useRouter } from "@/navigation";
 const LanguageSelector = () => {
   const pathname = usePathname();
   const router = useRouter();
-  console.log("pathname: " + pathname);
-  console.log("router: " + router);
 
   return (
     <div className=" bg-blue-500 z-20 p-3 rounded-lg flex flex-col fixed lg:right-2 lg:top-8 top-10 gap-x-6">

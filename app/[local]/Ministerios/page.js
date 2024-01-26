@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 // Images
-import Evangelismo from "@/public/Ministries/evangelismo.jpeg";
+import Evangelismo from "@/public/Ministries/evangelismo.webp";
 import GPS from "@/public/Ministries/GPS.jpg";
 import worship from "@/public/Ministries/worship.webp";
 import Study from "@/public/Ministries/Study.jpg";
@@ -17,6 +17,7 @@ import Couples from "@/public/Ministries/CoupleTherapy.jpg";
 import Men from "@/public/Ministries/Men_Prayer.jpg";
 import Women from "@/public/Ministries/Women_Prayer.webp";
 import Children from "@/public/Ministries/childPraying.jpg";
+import YouthGroup from "@/public/Ministries/YouthGroup1.webp";
 import { useTranslations } from "next-intl";
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
@@ -83,7 +84,7 @@ export default function Home() {
     {
       title: t("TEENS'S MINISTRY"),
       desc: t("Teen's Ministry Desc"),
-      imageLocation: Children,
+      imageLocation: YouthGroup,
     },
     {
       title: t("CHILDREN'S MINISTRY"),

@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Text from "../textComponents/text";
 
-function MiddleEyeCatch({ title, desc }) {
+function MiddleEyeCatch({ title, desc, imageSrc }) {
   const [isHovered, setIsHovered] = useState(false);
-
+console.log("Help Kanye",{imageSrc})
   const containerStyles = {
     width: "400px",
     height: "376px",
-    backgroundImage: "url('/middleEyeCatchPhoto/PeopleWorshiping.jpg')",
+    backgroundImage: `url('${imageSrc}')`,
     backgroundSize: isHovered ? "750px 976px" : "450px 576px",
     backgroundPosition: isHovered ? "0px -330px" : "0px -130px",
     borderRadius: "3rem",

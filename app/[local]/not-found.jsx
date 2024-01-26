@@ -1,5 +1,5 @@
 import Header from "../component/headerComponent/header";
-
+import { useTranslations } from "next-intl";
 export default function NotFound() {
   const headerTranslations = useTranslations("Header");
   const headerTitles = [
