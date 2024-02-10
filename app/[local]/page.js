@@ -4,11 +4,20 @@ import NewMember from "../component/newMemberComponent/newMember";
 import Footer from "../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import LanguageSelector from "../component/flagComponents/flagSelector";
-import Text from "../component/textComponents/text";
 import { useTranslations } from "next-intl";
-import leaderImage from "../../public/Leadership/TioyTia1.jpg"
+import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
+
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("homeTitle"),
+    description: t("homeDescription"),
+  };
+}
 
 export default function Home() {
   const t = useTranslations("Home");
@@ -20,7 +29,7 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 
   return (
@@ -30,21 +39,34 @@ export default function Home() {
         <NewMember />
       </div>
       <div className="mt-13 md:mt-0">
-        <Header headerTitles={headerTitles}/>
+        <Header headerTitles={headerTitles} />
       </div>
-      <div className="  mt-12 mb-10 md:my-8 flex flex-col md:flex-row md:justify-center gap-y-7">
-        <MiddleEyeCatch title={t("Leadership")} desc={"Read More About Our Leadership"} imageSrc={'/Leadership/TioyTia1.jpg'}/>
-        <MiddleEyeCatch title={t("Ministries")} desc={"Learn More About Our Ministries"} imageSrc={'/Ministries/YouthGroup1.webp'}/>
-        <MiddleEyeCatch title={t("About Us")} desc={"Learn More About Our Church"} imageSrc={'/Ministries/worship.webp'}/>
+      <div className="flex flex-col mx-auto items-center justify-center gap-y-6 my-6 lg:flex-row lg:gap-x-3">
+        <MiddleEyeCatch
+          title={t("Leadership")}
+          desc={t("Read More About Our Leadership")}
+          imageSrc={"/Leadership/TioyTia1.jpg"}
+          urlLink={"/Liderazgo"}
+        />
+        <MiddleEyeCatch
+          title={t("Ministries")}
+          desc={t("Learn More About Our Ministries")}
+          imageSrc={"/Ministries/YouthGroup1.webp"}
+          urlLink={"/Ministerios"}
+        />
+        <MiddleEyeCatch
+          title={t("About Us")}
+          desc={t("Learn More About Our Church")}
+          imageSrc={"/Ministries/worship.webp"}
+          urlLink={"/QuienesSomos"}
+        />
       </div>
       <div className=" h-60 flex-col lg:mb-10 mb-80 ">
         <div className="h-fit lg:pl-[154px] lg:pr-[108px] text-black lg:text-5xl text-2xl mx-6 font-normal capitalize mb-4 ">
           <div className={ebG.className}>{t("Bible Verse")}</div>
         </div>
         <div className="text-black text-5xl  font-normal uppercase relative text-right pr-16 overflow-hidden">
-          <div className={ebG.className}>
-            {t("Bible Verse Cite")}
-          </div>
+          <div className={ebG.className}>{t("Bible Verse Cite")}</div>
         </div>
       </div>
       <Footer />

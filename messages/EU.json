@@ -1,11 +1,30 @@
 {
+  "Metadata": {
+    "homeTitle": "Welcome to Luz Y Vida",
+    "homeDescription": "Welcome to Luz Y Vida",
+    "SoyNuevoTitle":"Join our Church",
+    "SoyNuevoDescription":"Join our Church",
+    "SermonesTitle":"Listen to our past Sermons",
+    "SermonesDescription":"Listen to our past Sermons",
+    "QuienesSomosTitle":"Who are we?",
+    "QuienesSomosDescription":"Who are we?",
+    "MinistriesTitle":"Learn about our Ministries",
+    "MinistriesDescription":"Learn about our Ministries",
+    "LeadershipTitle":"Learn about our Leadership",
+    "LeadershipDescription":"Learn about our Leadership",
+    "EventosTitle":"Learn about our Events",
+    "EventosDescription":"Learn about our Events"
+  },
   "Home": {
     "title": "Example English Jason Title",
     "Leadership": "LEADERSHIP",
     "About Us": "ABOUT US",
     "Bible Verse": "He hath shewed thee, O man, what is good; and what doth the Lord require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
     "Bible Verse Cite": "-Micah 6:8",
-    "Ministries": "MINISTRES"
+    "Ministries": "MINISTRES",
+    "Read More About Our Leadership": "Read More About Our Leadership",
+    "Learn More About Our Ministries": "Learn More About Our Ministries",
+    "Learn More About Our Church": "Learn More About Our Church"
   },
   "NewMembers": {
     "About You": "About You",
@@ -32,7 +51,13 @@
     "Submit": "Submit",
     "Bible Verse": "Come to me, all who labor and are heavy laden, and I will give you rest.",
     "Bible Verse Cite": "- Matthew 11:28",
-    "Example": "About You"
+    "Example": "About You",
+    "Who Are We": "Who Are We",
+    "Leadership": "Leadership",
+    "Ministries": "Ministries",
+    "Events": "Events",
+    "Sermons": "Sermons",
+    "Offerings": "Offerings"
   },
   "Sermons": {
     "Sermons": "Sermons"
@@ -63,53 +88,52 @@
     "CHILDREN'S MINISTRY": "CHILDREN'S MINISTRY",
     "Evangelization Desc": "Evangelization Or Evangelism, Is The Mission And Main Function Of The Church. It consists of bringing the Good News of Jesus Christ to those who, because they do not know it, are losing their opportunity to live the abundant life and be saved. The Dynamic to Evangelize Sprouts from the Experience of Having Been Reconciled with God. Therefore, basically evangelizing is the task of all Christians, all the time and in everything they do. Christ Sent All Believers Around the World to Make Disciples.",
     "Worship and Praise Desc": "In the act of worship we enrich our spiritual life, since the life of God is offered to us in the Christ who is present in the worship. Worship is not the ultimate goal of the Christian life, but it is the function of the church and believers, which nourishes and unifies all other functions of the Body of Christ.",
-    "Christian Education Desc" : "Christian Education aims to provide and facilitate those necessary processes and experiences, so that people can study, examine and reflect on the contents of their Christian faith, particularly regarding the redeeming love of God revealed in Jesus Christ, so that each person can respond in faith and love to the Lord, so that she understands herself and her human situation, and so that, united with the Christian community, she lives in the Spirit all her human relationships, and fulfills her discipleship in the world, persevering in hope. Christian.",
-    "Missions Desc" : "Our Lord Jesus Christ ordered that his Gospel be preached to the ends of the earth. The missionary responsibility of the church is unavoidable. We all have a part in that obligation, some participating directly as missionaries in different functions, others contributing our resources to make this work possible. Therefore, we do mission as individuals, in the local congregation, and through the institutions and organizations of our church that have this task. Our main responsibility for missionary support and support is through the Iglesia Cristiana Luz Y Vida MC Inc. and the ecclesiastical entities that they support.",
+    "Christian Education Desc": "Christian Education aims to provide and facilitate those necessary processes and experiences, so that people can study, examine and reflect on the contents of their Christian faith, particularly regarding the redeeming love of God revealed in Jesus Christ, so that each person can respond in faith and love to the Lord, so that she understands herself and her human situation, and so that, united with the Christian community, she lives in the Spirit all her human relationships, and fulfills her discipleship in the world, persevering in hope. Christian.",
+    "Missions Desc": "Our Lord Jesus Christ ordered that his Gospel be preached to the ends of the earth. The missionary responsibility of the church is unavoidable. We all have a part in that obligation, some participating directly as missionaries in different functions, others contributing our resources to make this work possible. Therefore, we do mission as individuals, in the local congregation, and through the institutions and organizations of our church that have this task. Our main responsibility for missionary support and support is through the Iglesia Cristiana Luz Y Vida MC Inc. and the ecclesiastical entities that they support.",
     "Prayer Desc": "The Ministry of Prayer is essentially important in the existence and maintenance of the spiritual life of the Church. This ministry will constantly promulgate, stimulate and inspire the corporate body of the Church to keep prayer alive in all matters and at all times just as the Lord taught us to pray without ceasing.",
-    "Pastoral Counseling Desc" :"Counseling is given by the Senior Pastor and will be considered advice from the Lord as long as said advice is biblical, of a healthy character, is in line with the vision and mission of the church, and stimulates unity between brothers. All council meetings will be held with greater confidentiality.",
-    "Couples Ministry Desc":"Bring healing to all couples in our church and other related couples, empowering and equipping them for their couple lives in Christ Jesus",
-    "Men's Ministry Desc":"Men's Ministry is the active pursuit of men to connect them with God, His Word, and other men, for the purpose of winning, developing, and training the man of God in Christ.",
-    "Women's Ministry Desc" :"Promote the role of women from a Christian perspective, strengthening the different areas of their lives. Being able to go after women, whether they are single, married, separated and/or divorced so that they have an encounter with Christ. And that we actively participate and be faithful representatives of God in the church, in our homes and in our community.",
+    "Pastoral Counseling Desc": "Counseling is given by the Senior Pastor and will be considered advice from the Lord as long as said advice is biblical, of a healthy character, is in line with the vision and mission of the church, and stimulates unity between brothers. All council meetings will be held with greater confidentiality.",
+    "Couples Ministry Desc": "Bring healing to all couples in our church and other related couples, empowering and equipping them for their couple lives in Christ Jesus",
+    "Men's Ministry Desc": "Men's Ministry is the active pursuit of men to connect them with God, His Word, and other men, for the purpose of winning, developing, and training the man of God in Christ.",
+    "Women's Ministry Desc": "Promote the role of women from a Christian perspective, strengthening the different areas of their lives. Being able to go after women, whether they are single, married, separated and/or divorced so that they have an encounter with Christ. And that we actively participate and be faithful representatives of God in the church, in our homes and in our community.",
     "Teen's Ministry Desc": "Capture youth through the love of Jesus so that they can recognize the role they play within the church and society, providing them with the necessary tools to be able to face any situation in life and come out more than conquerors in the name of our Lord Jesus Christ, they can also understand the call of God in their lives and be young people who impact the society where they live with a righteous life before God.",
-    "Children's Ministry Desc":"Have an effective children's ministry with a spiritual, transformative, innovative and growing growth, leading the child through teaching to love Jesus and be filled with the Holy Spirit",
+    "Children's Ministry Desc": "Have an effective children's ministry with a spiritual, transformative, innovative and growing growth, leading the child through teaching to love Jesus and be filled with the Holy Spirit",
     "example3": "example"
   },
-  "Leadeship":{
-    "Leadership":"Leadership",
-    "Pastors":"Pastores",
-    "Associate Pastores":"Associate Pastores",
-    "Decons":"Decons"
-
+  "Leadeship": {
+    "Leadership": "Leadership",
+    "Pastors": "Pastores",
+    "Associate Pastores": "Associate Pastores",
+    "Decons": "Decons"
   },
-  "Events":{
-    "event1":"Worship Group",
-    "eventTime1":"Sunday 1:30 PM",
-    "eventLocation1":"2318 Cilantro Dr. Orlando FL 32837",
-    "event2":"Small Group In Portuguese",
-    "eventTime2":"Wednesday July 19 7:30 PM",
-    "event3":"Bible Study",
-    "eventTime3":"Friday 7:30 PM",
-    "event4":"PRAYER RETREAT",
-    "eventTime4":"Saturday July 29 9:00 AM - 1:00 PM",
-    "Events":"Events"
+  "Events": {
+    "event1": "Worship Group",
+    "eventTime1": "Sunday 1:30 PM",
+    "eventLocation1": "2318 Cilantro Dr. Orlando FL 32837",
+    "event2": "Small Group In Portuguese",
+    "eventTime2": "Wednesday July 19 7:30 PM",
+    "event3": "Bible Study",
+    "eventTime3": "Friday 7:30 PM",
+    "event4": "PRAYER RETREAT",
+    "eventTime4": "Saturday July 29 9:00 AM - 1:00 PM",
+    "Events": "Events"
   },
-  "Header":{
-    "Who Are We":"Who Are We",
-    "Leadership":"Leadership",
-    "Ministries":"Ministries",
-    "Events":"Events",
-    "Sermons":"Sermons",
-    "Offerings":"Offerings",
-    "Example1":"Example1",
-    "Example2":"Example2"
+  "Header": {
+    "Who Are We": "Who Are We",
+    "Leadership": "Leadership",
+    "Ministries": "Ministries",
+    "Events": "Events",
+    "Sermons": "Sermons",
+    "Offerings": "Offerings",
+    "Example1": "Example1",
+    "Example2": "Example2"
   },
-  "newMemberComponent":{
-    "Call To Action":"Join Us Today"
+  "newMemberComponent": {
+    "Call To Action": "Join Us Today"
   },
-  "Footer":{
-    "Visit":"Visit Us",
-    "Hours":"Hours",
-    "Time1":"Sunday 1:30 PM",
-    "Time2":"Friday 7:30 PM"
+  "Footer": {
+    "Visit": "Visit Us",
+    "Hours": "Hours",
+    "Time1": "Sunday 1:30 PM",
+    "Time2": "Friday 7:30 PM"
   }
 }

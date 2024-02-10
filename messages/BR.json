@@ -1,11 +1,37 @@
 {
+  "Metadata": {
+    "homeTitle": "Bem-vindo(a) à Luz e Vida",
+    "homeDiscription": "Bem-vindo(a) à Luz e Vida",
+    "SoyNuevoTitle": "Junte-se à nossa Igreja",
+    "SoyNuevoDiscription": "Junte-se à nossa Igreja",
+    "SermonesTitle": "Ouça nossos sermões anteriores",
+    "SermonesDiscription": "Ouça nossos sermões anteriores",
+    "QuienesSomosTitle": "Quem somos nós?",
+    "QuienesSomosDiscription": "Quem somos nós?",
+    "MinistriesTitle": "Conheça nossos Ministérios",
+    "MinistriesDiscription": "Conheça nossos Ministérios",
+    "LeadershipTitle": "Conheça nossa Liderança",
+    "LeadershipDiscription": "Conheça nossa Liderança",
+    "EventosTitle": "Conheça nossos Eventos",
+    "EventosDiscription": "Conheça nossos Eventos"
+  },
+  "SermonsList":{
+    "SermonTitle1":"Example",
+    "SermonSpeaker1":"Speaker1",
+    "SermonDate1":"0/0/0",
+    "SermoneDescription":"Description"
+
+  },
   "Home": {
     "title": "Exemplo de Título em Inglês",
     "Leadership": "LIDERANÇA",
     "About Us": "SOBRE NÓS",
     "Bible Verse": "Ele te declarou, ó homem, o que é bom; e o que o Senhor pede de ti, senão que pratiques a justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
     "Bible Verse Cite": "-Miquéias 6:8",
-    "Ministries": "MINISTÉRIOS"
+    "Ministries": "MINISTÉRIOS",
+    "Read More About Our Leadership": "Saiba Mais Sobre Nossa Liderança",
+    "Learn More About Our Ministries": "Saiba Mais Sobre Nossos Ministérios",
+    "Learn More About Our Church": "Saiba Mais Sobre Nossa Igreja"
   },
   "NewMembers": {
     "About You": "Sobre Você",
@@ -32,7 +58,13 @@
     "Submit": "Enviar",
     "Bible Verse": "Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei.",
     "Bible Verse Cite": "- Mateus 11:28",
-    "Example": "Sobre Você"
+    "Example": "Sobre Você",
+    "Who Are We": "¿Quiénes Somos?",
+    "Leadership": "Liderazgo",
+    "Ministries": "Ministerios",
+    "Events": "Eventos",
+    "Sermons": "Sermónes",
+    "Offerings": "Ofrendas"
   },
   "Sermons": {
     "Sermons": "Sermões"
@@ -98,9 +130,7 @@
     "Ministries":"Ministérios",
     "Events":"Eventos",
     "Sermons":"Sermões",
-    "Offerings":"Ofertas",
-    "Example1":"Exemplo1",
-    "Example2":"Exemplo2"
+    "Offerings":"Ofertas"
   },
   "newMemberComponent":{
     "Call To Action":"Junte-se a Nós Hoje"

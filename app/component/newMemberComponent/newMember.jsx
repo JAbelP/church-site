@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import heroBanner from "../../../public/SoyNuevoImage/NewEyeCatch.jpg";
+import heroBanner from "../../../public/SoyNuevoImage/preChanges.webp";
 import Image from "next/image";
 import { EB_Garamond } from "next/font/google";
 import Text from "../textComponents/text";

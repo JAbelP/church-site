@@ -12,13 +12,18 @@ import GPS from "@/public/Events/GPS.jpg";
 import Study from "@/public/Ministries/Study.jpg";
 import Pray from "@/public/Ministries/Prayer.jpg";
 import Adoracion from "@/public/Ministries/Prayer.jpg";
-import Text from "../../component/textComponents/text";
-import LanguageSelector from "../../component/flagComponents/flagSelector";
 import { useTranslations } from "next-intl";
-export const metadata = {
-  title: "Eventos",
-  description: "Únete a nuestros eventos",
-};
+import { getTranslations } from "next-intl/server";
+import LanguageSelector from "@/app/component/flagComponents/flagSelector";
+
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("EventosTitle"),
+    description: t("EventosDescription"),
+  };
+}
 
 export default function Home() {
   const t = useTranslations("Events");
@@ -53,17 +58,18 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
     <main className="bg-white h-fit w-full flex flex-col text-black">
-      <div className="m-auto">
+      <LanguageSelector />
+      <div className="mt-28 mx-auto md:mt-0">
         <NewMember />
       </div>
-      <Header headerTitles={headerTitles}/>
+      <Header headerTitles={headerTitles} />
       <div>
         <div className={CopperplateBold.className}>
-          <div className="text-center text-black text-7xl  tracking-widest mb-16">
+          <div className="text-center text-black lg:text-7xl  text-3xl mt-3   tracking-widest mb-16">
             {t("Events")}
           </div>
         </div>

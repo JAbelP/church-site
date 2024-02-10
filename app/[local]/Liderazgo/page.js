@@ -9,15 +9,26 @@ import Image3 from "@/public/Leadership/Wellington.jpg";
 import Image4 from "@/public/Leadership/DeRosa.jpg";
 import localFont from "next/font/local";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
-import Text from "../../component/textComponents/text";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
-export const metadata = {
-  title: "Liderazgo",
-  description: "Conozca el liderazgo",
-};
+// export const metadata = {
+//   title: "Liderazgo",
+//   description: "Conozca el liderazgo",
+// };
+
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("LeadershipTitle"),
+    description: t("LeadershipDescription"),
+  };
+}
+
 
 export default function Home() {
   const t = useTranslations("Leadeship");
@@ -28,7 +39,7 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
     <main className={ebG.className}>
@@ -58,7 +69,7 @@ export default function Home() {
               altText={"Pastores: TOMAS Y INGRID RAMIREZ"}
             />
           </div>
-          <div className="text-4xl font-medium tracking-widest mx-auto uppercase">
+          <div className="text-4xl font-medium tracking-widest uppercase text-center justify-center mx-auto">
             {t('Associate Pastores')}
           </div>
           <div>

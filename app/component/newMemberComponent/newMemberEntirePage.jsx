@@ -38,6 +38,11 @@ export default function EntirePage({
   submitText,
   bibleVerse,
   bibleVerseCite,
+  header1,
+  header2,
+  header3,
+  header4,
+  header5,
 }) {
   // set up for reCaptcha
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
@@ -56,20 +61,11 @@ export default function EntirePage({
   const handleSubmit = (e) => {
     e.preventDefault();
     // You can handle the form data submission here
-    console.log("Name: ", name);
-    console.log("Age: ", age);
-    console.log("Gender: ", gender); // Log the selected gender
-    console.log("Phone: ", phone);
-    console.log("Email: ", email);
-    console.log("Heard: ", heard);
-    console.log("Would Like to: ", wouldLikeTo);
-    console.log("Petition: ", petition);
 
     grecaptcha.ready(() => {
       grecaptcha
         .execute(siteKey, { action: "submit" })
         .then(async (token) => {
-          console.log(token);
           const bodyForGoogleResponse = {
             recaptchaResponse: token,
           };
@@ -84,31 +80,26 @@ export default function EntirePage({
             if (response1.ok) {
               const json = await response1.json();
               if (json.success) {
-                console.log("swagger");
                 // writeData(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date);
                 // sendEmail(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date) ;
               }
             } else {
               throw new Error(response1.statusText);
             }
-          } catch (error) {
-            console.log(error);
-          }
+          } catch (error) {}
         })
-        .catch((error) => {
-          console.log(error);
-        });
+        .catch((error) => {});
     });
   };
+  console.log()
 
-  const headerTranslations = useTranslations("Header");
   const headerTitles = [
-    { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
-    { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
-    { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
-    { Name: headerTranslations("Events"), Link: "/Eventos" },
-    { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: Object.values({header1}), Link: "/QuienesSomos" },
+    { Name: Object.values({header2}), Link: "/Liderazgo" },
+    { Name: Object.values({header3}), Link: "/Ministerios" },
+    { Name: Object.values({header4}), Link: "/Eventos" },
+    { Name: Object.values({header5}), Link: "/Sermones" },
+    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 
   return (

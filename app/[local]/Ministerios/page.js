@@ -19,12 +19,21 @@ import Women from "@/public/Ministries/Women_Prayer.webp";
 import Children from "@/public/Ministries/childPraying.jpg";
 import YouthGroup from "@/public/Ministries/YouthGroup1.webp";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
-export const metadata = {
-  title: "Ministerios",
-  description: "Conozca Más Sobre Nuestros Ministerios",
-};
+
+
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("MinistriesTitle"),
+    description: t("MinistriesDescription"),
+  };
+}
+
 
 export default function Home() {
   const t = useTranslations("Minstries");
@@ -99,7 +108,7 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
     <main>

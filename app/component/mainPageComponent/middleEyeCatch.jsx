@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Text from "../textComponents/text";
+import Link from "next/link";
 
-function MiddleEyeCatch({ title, desc, imageSrc }) {
+function MiddleEyeCatch({ title, desc, imageSrc, urlLink }) {
   const [isHovered, setIsHovered] = useState(false);
-console.log("Help Kanye",{imageSrc})
   const containerStyles = {
-    width: "400px",
+    width: "75%",
     height: "376px",
     backgroundImage: `url('${imageSrc}')`,
     backgroundSize: isHovered ? "750px 976px" : "450px 576px",
@@ -32,29 +32,29 @@ console.log("Help Kanye",{imageSrc})
 
   return (
     <div
-      className={`text-black`}
-      style={containerStyles}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div
-        className="w-full h-full rounded-3xl pt-5 pl-5 relative"
-        style={overlayStyles}
+        className={`text-black`}
+        style={containerStyles}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
+    <Link href={urlLink}>
         <div
-          className="text-4xl font-bold mb-5 opacity-100 text-white absolute"
-          style={backGroundText}
+          className="w-full h-full rounded-3xl pt-5 pl-5 relative"
+          style={overlayStyles}
         >
-          {title}
+          <div
+            className="text-4xl font-bold mb-5 opacity-100 text-white absolute"
+            style={backGroundText}
+          >
+            {title}
+          </div>
+          <div className="text-4xl font-bold mb-5 opacity-100 text-white">
+            {title}
+          </div>
+          <div className="font-medium text-3xl text-white">{desc}</div>
         </div>
-        <div className="text-4xl font-bold mb-5 opacity-100 text-white">
-          {title}
-        </div>
-        <div className="font-medium text-3xl text-white">
-          {desc}
-        </div>
+    </Link>
       </div>
-    </div>
   );
 }
 

@@ -8,14 +8,19 @@ import localFont from "next/font/local";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 
-export const metadata = {
-  title: 'Quienes Somos',
-  description: 'Quienes Somos Nosotros',
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("QuienesSomosTitle"),
+    description: t("QuienesSomosDescription")
+  };
 }
 
 export default function Home() {
@@ -27,12 +32,11 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 
 
   return (
-    <main className={ebG.className}>
+    <main className={`${ebG.className} overflow-x-hidden`}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="mt-28 mx-auto md:mt-0">
           <NewMember />
@@ -57,7 +61,7 @@ export default function Home() {
             <h1 className="font-extrabold text-6xl pb-4">
             {t('Vision')}
             </h1>
-            <p className="text-3xl pb-8">
+            <p className="text-3xl pb-8 px-3">
             {t('Evangelize and Disciple through the city')}
               
             </p>
