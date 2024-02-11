@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import { EB_Garamond } from "next/font/google";
 import LanguageSelector from "../flagComponents/flagSelector";
+import { useRouter } from "../../../navigation";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
@@ -42,7 +43,7 @@ export default function EntirePage({
 }) {
   // set up for reCaptcha
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
-
+  const router = useRouter();
   // State for the form fields
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -76,7 +77,6 @@ export default function EntirePage({
 
             if (response1.ok) {
               const json = await response1.json();
-              //   console.log("Look loser",json.success)
 
               const bodyNoJson = {
                 name,
@@ -96,9 +96,7 @@ export default function EntirePage({
                   headers: { "content-type": "application/json;charset=utf-8" },
                   body,
                 });
-
-                // writeData(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date);
-                // sendEmail(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date) ;
+                router.push("/SoyNuevo/Success");
               }
             } else {
               throw new Error(response1.statusText);
@@ -108,7 +106,6 @@ export default function EntirePage({
         .catch((error) => {});
     });
   };
-  console.log();
 
   const headerTitles = [
     { Name: Object.values({ header1 }), Link: "/QuienesSomos" },
@@ -116,7 +113,7 @@ export default function EntirePage({
     { Name: Object.values({ header3 }), Link: "/Ministerios" },
     { Name: Object.values({ header4 }), Link: "/Eventos" },
     { Name: Object.values({ header5 }), Link: "/Sermones" },
-    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 
   return (

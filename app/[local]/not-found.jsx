@@ -8,7 +8,7 @@ export default function NotFound() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
     <div className="flex flex-col h-screen bg-white text-black">

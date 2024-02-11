@@ -2,18 +2,21 @@
   "Metadata": {
     "homeTitle": "Welcome to Luz Y Vida",
     "homeDescription": "Welcome to Luz Y Vida",
-    "SoyNuevoTitle":"Join our Church",
-    "SoyNuevoDescription":"Join our Church",
-    "SermonesTitle":"Listen to our past Sermons",
-    "SermonesDescription":"Listen to our past Sermons",
-    "QuienesSomosTitle":"Who are we?",
-    "QuienesSomosDescription":"Who are we?",
-    "MinistriesTitle":"Learn about our Ministries",
-    "MinistriesDescription":"Learn about our Ministries",
-    "LeadershipTitle":"Learn about our Leadership",
-    "LeadershipDescription":"Learn about our Leadership",
-    "EventosTitle":"Learn about our Events",
-    "EventosDescription":"Learn about our Events"
+    "SoyNuevoTitle": "Join our Church",
+    "SoyNuevoDescription": "Join our Church",
+    "SermonesTitle": "Listen to our past Sermons",
+    "SermonesDescription": "Listen to our past Sermons",
+    "QuienesSomosTitle": "Who are we?",
+    "QuienesSomosDescription": "Who are we?",
+    "MinistriesTitle": "Learn about our Ministries",
+    "MinistriesDescription": "Learn about our Ministries",
+    "LeadershipTitle": "Learn about our Leadership",
+    "LeadershipDescription": "Learn about our Leadership",
+    "EventosTitle": "Learn about our Events",
+    "EventosDescription": "Learn about our Events"
+  },
+  "Success": {
+    "Thanks": " Thank you, We Will Get Back to You Shortly"
   },
   "Home": {
     "title": "Example English Jason Title",

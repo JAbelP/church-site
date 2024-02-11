@@ -5,6 +5,8 @@ import localFont from "next/font/local";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
+import Image from "next/image";
+import Link from "next/link";
 
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
@@ -30,7 +32,7 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 
   const sermonsList = [
@@ -40,7 +42,8 @@ export default function Home() {
       Date: "Jan 23, 2024",
       Description:
         "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos",
-      ImageURL: "ImageURL",
+      ImageURL: "/SermonsImages/El Andar Del Creyente.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=nSymVeTo88M",
     },
     {
       Title: "La Bendición Espiritual del creyente de Cristo ",
@@ -48,14 +51,23 @@ export default function Home() {
       Date: "Jan 23, 2024",
       Description:
         "De corazon deseo que Dios te permita llenar tu vida con esta palabra, no dejes de escuchar este maravilloso mensaje.",
+      ImageURL: "/SermonsImages/BendicionEspiritualDelCreyente.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=cBYjT6RvuLI",
     },
     {
       Title: "De donde vendrá mi ayuda",
-      Speaker: "Julian Musa",
+      Speaker: "Hermano Julian Musa",
+      Date: "Jan 5, 2024",
+      ImageURL: "/SermonsImages/DeDondeVendraMiAyuda.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=HFLjyk2jRPo",
+    },
+    {
       Title: "Dependiendo de Dios",
       Speaker: "Pastor Aldo Colon",
       Date: "Dec 12, 2023",
       Description: "Dios quiere hablar y bendecir tu vida.",
+      ImageURL: "/SermonsImages/DependiendoDeDios.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=dqwGvQGK9Lg",
     },
     {
       Title: "Una nueva vestimenta",
@@ -63,6 +75,8 @@ export default function Home() {
       Date: "Nov 23, 2023",
       Description:
         "Dios les permita seguir avanzando y seguir confiando en su camino, Este mensaje nos enseña la importancia de la vestimenta de Dios.",
+      ImageURL: "/SermonsImages/UnaNuevaVestimenta.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=G_AVEdNPrPw",
     },
     {
       Title: "Iglesia Y Pastores",
@@ -70,72 +84,92 @@ export default function Home() {
       Date: "Nov 21, 2023",
       Description:
         "Dios quiere llegar a tu vida con este mensaje. No dejes de conocer la verdad y todo lo referente a su camino.",
+      ImageURL: "/SermonsImages/IglesiaYPastores.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=H8UOoYRJaiU&",
     },
     {
       Title: "¿De quien eres esclavo?",
-      Speaker: "Pastor Tomas M. Ramirez",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "Nov 18, 2023",
       Description:
         "Dios le permita seguir avanzando en todos sus proyectos, hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo",
+      ImageURL: "/SermonsImages/De Quien Eres Esclavo.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=qmn3HaZHPQQ",
     },
     {
       Title: "La Iglesia",
-      Speaker: "Tomas M. Ramirez",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "Oct 12, 2023",
       Description:
         "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje.",
+      ImageURL: "/SermonsImages/La Iglesia.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=92nXwnVflR0",
     },
     {
       Title: "La Iglesia Parte 2",
-      Speaker: "Tomas M. Ramirez",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "Oct 12, 2023",
       Description:
         "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino.",
+      ImageURL: "/SermonsImages/La Iglesia.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=RSZlscIK3dI",
     },
     {
-      Title: "momentos malos",
+      Title: "Momentos Malos",
       Speaker: "Joshua de la Rosa",
       Date: "Oct 12, 2023",
       Description:
         "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas.",
+      ImageURL: "/SermonsImages/Momentos Malos.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=ag7TA_Xlnwk",
     },
     {
       Title: "Fijando los ojos en Cristo",
-      Speaker: "Aldo Colon",
+      Speaker: "Pastor Aldo Colon",
       Date: "Oct 12, 2023",
       Description:
         "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida.",
+      ImageURL: "/SermonsImages/Fijando Los Ojos En Cristo.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=2zep9_dgtTE",
     },
     {
       Title: "Yo lo Hare",
-      Speaker: "Tomas Ramirez",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "Sep 7, 2023",
       Description:
         "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo. Dios te bendiga y guarde",
+      ImageURL: "/SermonsImages/Yo Lo Hare.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=IjDO79orPrU",
     },
     {
       Title: "Viviendo según el llamado",
-      Speaker: "Aldo Colon",
+      Speaker: "Pastor Aldo Colon",
       Date: "Sep 1, 2023",
       Description: "",
+      ImageURL: "/SermonsImages/Viviendo Seguin El Llamando.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=uuwq3huJgzc",
     },
     {
       Title: "¡EL MUNDO NO ME PUEDE OFRECER NADA!",
-      Speaker: "MISAEL RAMIREZ",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "Jul 2, 2023",
       Description: "",
+      ImageURL: "/SermonsImages/El Mundo No Me Puede Ofrecer Nada.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=jv0-RsY6ueA",
     },
     {
       Title: "REMOVIENDO LAS CENIZAS, PARA QUE EL FUEGO NO SE APAGUE",
-      Speaker: "MISAEL RAMIREZ",
+      Speaker: "Pastor Tomas Ramirez",
       Date: "May 4, 2023",
       Description: "",
+      ImageURL: "/SermonsImages/Removiendo las Cenizas.jpg",
+      YoutubeURL: "https://www.youtube.com/watch?v=tsLE7ry4bUY",
     },
   ];
 
   return (
     <main>
-    <LanguageSelector/>
+      <LanguageSelector />
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="lg:m-auto mt-28">
           <NewMember />
@@ -146,21 +180,30 @@ export default function Home() {
             {t("Sermons")}
           </p>
         </div>
-        <div className="flex flex-col gap-y-6 mx-auto">
+        <div>
           {sermonsList.map((sermon) => (
-            <div className="flex flex-row gap-x-3" key={sermon.Title}>
-              <div>Image should go here</div>
-              <div className="flex flex-col w-9/12">
-                <p>{sermon.Title}</p>
-                <p>{sermon.Speaker}</p>
-                <p>{sermon.Date}</p>
-                <p>{sermon.Description}</p>
+            <div className="flex flex-col items-center text-center py-4 lg:flex-row lg:justify-center" key={sermon.Title}>
+              <div>
+                <a href={sermon.YoutubeURL}>
+                  <Image
+                    src={sermon.ImageURL}
+                    alt={sermon.Title}
+                    width={320}
+                    height={180}
+                    className="rounded-lg"
+                  />
+                </a>
+              </div>
+              <div className="w-10/12 lg:w-3/12 lg:pl-4 pt-2">
+                <p className="font-bold">{sermon.Title}</p>
+                <p className="pt-2">{sermon.Speaker}</p>
+                <p className="pt-2">{sermon.Description}</p>
+                <p className="pt-2">{sermon.Date}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="flex flex-col items-center">under construction</div>
         <Footer />
       </div>
     </main>

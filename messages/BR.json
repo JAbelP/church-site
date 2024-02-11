@@ -14,6 +14,9 @@
     "LeadershipDiscription": "Conheça nossa Liderança",
     "EventosTitle": "Conheça nossos Eventos",
     "EventosDiscription": "Conheça nossos Eventos"
+  },  
+  "Success": {
+    "Thanks": "Obrigado, Entraremos em Contato em Breve."
   },
   "SermonsList":{
     "SermonTitle1":"Example",

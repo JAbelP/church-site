@@ -16,7 +16,6 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 async function sendMail(  body) {
-  console.log("this is the body",body)
   const { SMTP_EMAIL, SMTP_PASSWORD } = process.env;
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -28,7 +27,6 @@ async function sendMail(  body) {
 
   try {
     const testResult = await transport.verify();
-    console.log(testResult);
   } catch (error) {
     console.error({ error });
     return;
@@ -50,7 +48,6 @@ async function sendMail(  body) {
 }
 export async function POST(request) {
   const body = await request.json();
-  console.log(body);
   sendMail(body)
   return NextResponse.json({ status: 200 });
 }

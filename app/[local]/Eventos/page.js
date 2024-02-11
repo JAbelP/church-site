@@ -53,7 +53,7 @@ export default function Home() {
     { Name: headerTranslations("Ministries"), Link: "/Ministerios" },
     { Name: headerTranslations("Events"), Link: "/Eventos" },
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
-    // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
     <main className="bg-white h-fit w-full flex flex-col text-black">
