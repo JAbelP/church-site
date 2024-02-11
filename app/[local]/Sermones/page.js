@@ -4,6 +4,7 @@ import Footer from "../../component/footerComponent/footer";
 import localFont from "next/font/local";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
 
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
@@ -125,6 +126,7 @@ export default function Home() {
 
   return (
     <main>
+    <LanguageSelector/>
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="lg:m-auto mt-28">
           <NewMember />

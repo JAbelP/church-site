@@ -5,11 +5,7 @@ import Footer from "../footerComponent/footer";
 import localFont from "next/font/local";
 import Script from "next/script";
 import { EB_Garamond } from "next/font/google";
-import Text from "../textComponents/text";
-import HeaderText from "../textComponents/HeaderText";
-import LabelText from "../textComponents/Labeltext";
 import LanguageSelector from "../flagComponents/flagSelector";
-import { useTranslations } from "next-intl";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const trajanProFont = localFont({ src: "../../../font/TrajanProR.ttf" });
 
@@ -63,6 +59,7 @@ export default function EntirePage({
     // You can handle the form data submission here
 
     grecaptcha.ready(() => {
+      // Display the key/value pairs
       grecaptcha
         .execute(siteKey, { action: "submit" })
         .then(async (token) => {
@@ -79,7 +76,27 @@ export default function EntirePage({
 
             if (response1.ok) {
               const json = await response1.json();
+              //   console.log("Look loser",json.success)
+
+              const bodyNoJson = {
+                name,
+                age,
+                gender,
+                email,
+                phone,
+                heard,
+                wouldLikeTo,
+                petition,
+              };
+
+              const body = JSON.stringify(bodyNoJson);
               if (json.success) {
+                const response = await fetch("/api/submit", {
+                  method: "POST",
+                  headers: { "content-type": "application/json;charset=utf-8" },
+                  body,
+                });
+
                 // writeData(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date);
                 // sendEmail(formValues.name, formValues.email, formValues.phone, formValues.address, clientNewServiceAmount, formValues.date) ;
               }
@@ -91,14 +108,14 @@ export default function EntirePage({
         .catch((error) => {});
     });
   };
-  console.log()
+  console.log();
 
   const headerTitles = [
-    { Name: Object.values({header1}), Link: "/QuienesSomos" },
-    { Name: Object.values({header2}), Link: "/Liderazgo" },
-    { Name: Object.values({header3}), Link: "/Ministerios" },
-    { Name: Object.values({header4}), Link: "/Eventos" },
-    { Name: Object.values({header5}), Link: "/Sermones" },
+    { Name: Object.values({ header1 }), Link: "/QuienesSomos" },
+    { Name: Object.values({ header2 }), Link: "/Liderazgo" },
+    { Name: Object.values({ header3 }), Link: "/Ministerios" },
+    { Name: Object.values({ header4 }), Link: "/Eventos" },
+    { Name: Object.values({ header5 }), Link: "/Sermones" },
     // { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
 

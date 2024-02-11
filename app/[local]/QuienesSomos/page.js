@@ -3,7 +3,6 @@ import Header from "../../component/headerComponent/header";
 import NewMember from "../../component/newMemberComponent/newMember";
 import Footer from "../../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
-import Image1 from "@/public/QuienesSomosSVG/middleEyeCatch.svg"
 import localFont from "next/font/local";
 import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
@@ -66,7 +65,7 @@ export default function Home() {
               
             </p>
           </div>
-          <Image src={Image1} alt="Beliefs" />
+          <Image  width={642} height={696} src={"/QuienesSomosSVG/middleEyeCatch.svg"} alt="Beliefs" />
         </div>
         <Footer />
       </div>

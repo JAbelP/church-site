@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import Text from "../textComponents/text";
 import Link from "next/link";
 
 function MiddleEyeCatch({ title, desc, imageSrc, urlLink }) {

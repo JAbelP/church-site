@@ -6,15 +6,10 @@ import localFont from "next/font/local";
 import Eventos from "../../component/eventosComponents/eventos";
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
-// import a from "../../../public/Events/Singing.webp"
-import a from "@/public/Events/Singing.webp";
-import GPS from "@/public/Events/GPS.jpg";
-import Study from "@/public/Ministries/Study.jpg";
-import Pray from "@/public/Ministries/Prayer.jpg";
-import Adoracion from "@/public/Ministries/Prayer.jpg";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import LanguageSelector from "@/app/component/flagComponents/flagSelector";
+import LanguageSelector from "../../component/flagComponents/flagSelector";
+
 
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
@@ -32,22 +27,22 @@ export default function Home() {
       eventName: t("event1"),
       eventTime: t("eventTime1"),
       eventLocation: t("eventLocation1"),
-      imageLocation: Adoracion,
+      imageLocation: "/Events/Singing.webp",
     },
     {
       eventName: t("event2"),
       eventTime: t("eventTime2"),
-      imageLocation: GPS,
+      imageLocation: "/Events/GPS.jpg",
     },
     {
       eventName: t("event3"),
       eventTime: t("eventTime3"),
-      imageLocation: Study,
+      imageLocation: "/Ministries/Study.jpg",
     },
     {
       eventName: t("event4"),
       eventTime: t("eventTime4"),
-      imageLocation: Pray,
+      imageLocation: "/Ministries/Prayer.jpg",
     },
   ];
 
@@ -62,7 +57,7 @@ export default function Home() {
   ];
   return (
     <main className="bg-white h-fit w-full flex flex-col text-black">
-      <LanguageSelector />
+      <LanguageSelector/>
       <div className="mt-28 mx-auto md:mt-0">
         <NewMember />
       </div>

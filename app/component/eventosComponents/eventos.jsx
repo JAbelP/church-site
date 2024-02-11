@@ -1,12 +1,10 @@
 import React from "react";
 import localFont from "next/font/local";
 import Image from "next/image";
-import Text from "../textComponents/text";
 import LanguageSelector from "../flagComponents/flagSelector";
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
 function Eventos({ eventName, eventTime, eventLocation, eventImage }) {
-  debugger;
   return (
     <>
       <div className="flex md:flex-row flex-col items-center">

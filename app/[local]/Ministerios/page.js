@@ -3,21 +3,7 @@ import NewMember from "../../component/newMemberComponent/newMember";
 import Footer from "../../component/footerComponent/footer";
 import EyeCatch from "../../component/ministeriosComponents/eyeCatch";
 import localFont from "next/font/local";
-import Text from "../../component/textComponents/text";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
-// Images
-import Evangelismo from "@/public/Ministries/evangelismo.webp";
-import GPS from "@/public/Ministries/GPS.jpg";
-import worship from "@/public/Ministries/worship.webp";
-import Study from "@/public/Ministries/Study.jpg";
-import mission from "@/public/Ministries/Mission.jpg";
-import prayer from "@/public/Ministries/Prayer.jpg";
-import Therapy from "@/public/Ministries/Pastoral Therapy.jpg";
-import Couples from "@/public/Ministries/CoupleTherapy.jpg";
-import Men from "@/public/Ministries/Men_Prayer.jpg";
-import Women from "@/public/Ministries/Women_Prayer.webp";
-import Children from "@/public/Ministries/childPraying.jpg";
-import YouthGroup from "@/public/Ministries/YouthGroup1.webp";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
@@ -42,63 +28,63 @@ export default function Home() {
     {
       title: t("Evenglism"),
       desc: t("Evangelization Desc"),
-      imageLocation: Evangelismo,
+      imageLocation: "/Ministries/evangelismo.webp",
     },
     {
       // [TODO] Fix this discription
       title: t("Small Health Groups"),
       desc: t("Evangelization Desc"),
-      imageLocation: GPS,
+      imageLocation: "/Ministries/GPS.jpg",
     },
     {
       title: t("WORSHIP AND PRAISE"),
       desc: t("Worship and Praise Desc"),
-      imageLocation: worship,
+      imageLocation: "/Ministries/worship.webp",
     },
     {
       title: t("CHRISTIAN EDUCATION"),
       desc: t("Christian Education Desc"),
-      imageLocation: Study,
+      imageLocation: "/Ministries/Study.jpg",
     },
     {
       title: t("MISSIONS"),
       desc: t("Missions Desc"),
-      imageLocation: mission,
+      imageLocation: "/Ministries/Mission.jpg",
     },
     {
       title: t("PRAYER"),
       desc: t("Prayer Desc"),
-      imageLocation: prayer,
+      imageLocation: "/Ministries/Prayer.jpg",
     },
     {
       title: t("PASTORAL COUNSELING"),
       desc: t("Pastoral Counseling Desc"),
-      imageLocation: Therapy,
+      imageLocation: "/Ministries/Pastoral Therapy.jpg",
     },
     {
       title: t("COUPLES MINISTRY"),
       desc: t("Couples Ministry Desc"),
-      imageLocation: Couples,
+      imageLocation: "/Ministries/CoupleTherapy.jpg",
     },
     {
       title: t("MEN'S MINISTRY"),
       desc: t("Men's Ministry Desc"),
-      imageLocation: Men,
+      imageLocation: "/Ministries/Men_Prayer.jpg",
     },
     {
       title: t("WOMEN'S MINISTRY"),
       desc: t("Women's Ministry Desc"),
-      imageLocation: Women,
+      imageLocation: "/Ministries/Women_Prayer.webp",
     },
     {
       title: t("TEENS'S MINISTRY"),
       desc: t("Teen's Ministry Desc"),
-      imageLocation: YouthGroup,
+      imageLocation: "/Ministries/YouthGroup1.webp",
     },
     {
       title: t("CHILDREN'S MINISTRY"),
       desc: t("Children's Ministry Desc"),
-      imageLocation: Children,
+      imageLocation: "/Ministries/childPraying.jpg",
     },
   ];
   const headerTranslations = useTranslations("Header");
@@ -125,7 +111,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center">
           {mini.map((item, index) => (
-            <EyeCatch
+        <EyeCatch
               title={item.title}
               desc={item.desc}
               key={index}

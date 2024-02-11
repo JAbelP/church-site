@@ -2,8 +2,6 @@ import React from "react";
 import { Inter } from "next/font/google";
 import { EB_Garamond } from "next/font/google";
 import Image from "next/image";
-import Text from "../textComponents/text";
-
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
 function EyeCatch({ title, imageLocation, desc }) {

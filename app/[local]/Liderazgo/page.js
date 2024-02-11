@@ -3,10 +3,6 @@ import NewMember from "../../component/newMemberComponent/newMember";
 import Footer from "../../component/footerComponent/footer";
 import { EB_Garamond } from "next/font/google";
 import SubEyeCatch from "../../component/ministeriosComponents/subEyeCatch";
-import Image1 from "@/public/Leadership/TioyTia1.jpg";
-import Image2 from "@/public/Leadership/Colon.jpg";
-import Image3 from "@/public/Leadership/Wellington.jpg";
-import Image4 from "@/public/Leadership/DeRosa.jpg";
 import localFont from "next/font/local";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 import { useTranslations } from "next-intl";
@@ -65,7 +61,7 @@ export default function Home() {
           <div>
             <SubEyeCatch
               names={"TOMAS & INGRID RAMIREZ"}
-              imageLocation={Image1}
+              imageLocation={"/Leadership/TioyTia1.jpg"}
               altText={"Pastores: TOMAS Y INGRID RAMIREZ"}
             />
           </div>
@@ -75,7 +71,7 @@ export default function Home() {
           <div>
             <SubEyeCatch
               names={"ALDO & BRENDA COLON"}
-              imageLocation={Image2}
+              imageLocation={"/Leadership/Colon.jpg"}
               altText={"PASTOR ASOCIADO: ALDO Y BRENDA COLON"}
             />
           </div>
@@ -88,13 +84,13 @@ export default function Home() {
           <div className="flex md:flex-row md:justify-evenly flex-col gap-y-16">
             <SubEyeCatch
               names={"WELLINGTON & MARCIA DE JESUS"}
-              imageLocation={Image3}
+              imageLocation={"/Leadership/Wellington.jpg"}
               altText={"Decon: WELLINGTON Y MARCIA DE JESUS"}
             />
 
             <SubEyeCatch
               names={"JOSE & ANA PAULA DE LA ROSA"}
-              imageLocation={Image4}
+              imageLocation={"/Leadership/DeRosa.jpg"}
               altText={"Decon: JOSE & ANA PAULA DE LA ROSA"}
             />
           </div>

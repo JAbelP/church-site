@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { EB_Garamond } from "next/font/google";
-import Text from "../textComponents/text";
 import { useTranslations } from "next-intl";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
