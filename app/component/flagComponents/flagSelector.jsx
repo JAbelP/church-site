@@ -5,7 +5,7 @@ import BrazilImage from "../../../public/Language Icons/brazil.png";
 import EnglishImage from "../../../public/Language Icons/usa.png";
 import SpanishImage from "../../../public/Language Icons/spain.png";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { usePathname, useRouter } from "@/navigation";
+import { usePathname, useRouter } from "../../../navigation";
 
 const LanguageSelector = () => {
   const pathname = usePathname();
