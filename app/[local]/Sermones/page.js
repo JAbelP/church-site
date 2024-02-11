@@ -38,14 +38,16 @@ export default function Home() {
       Title: "El andar del creyente",
       Speaker: "Pastor Tomas Ramirez",
       Date: "Jan 23, 2024",
-      Description: "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos",
-      ImageURL:"ImageURL"
+      Description:
+        "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos",
+      ImageURL: "ImageURL",
     },
     {
       Title: "La Bendición Espiritual del creyente de Cristo ",
       Speaker: "Hermano Julian Musa",
       Date: "Jan 23, 2024",
-      Description: "De corazon deseo que Dios te permita llenar tu vida con esta palabra, no dejes de escuchar este maravilloso mensaje.",
+      Description:
+        "De corazon deseo que Dios te permita llenar tu vida con esta palabra, no dejes de escuchar este maravilloso mensaje.",
     },
     {
       Title: "De donde vendrá mi ayuda",
@@ -59,49 +61,57 @@ export default function Home() {
       Title: "Una nueva vestimenta",
       Speaker: "Pastor Aldo Colon",
       Date: "Nov 23, 2023",
-      Description: "Dios les permita seguir avanzando y seguir confiando en su camino, Este mensaje nos enseña la importancia de la vestimenta de Dios.",
+      Description:
+        "Dios les permita seguir avanzando y seguir confiando en su camino, Este mensaje nos enseña la importancia de la vestimenta de Dios.",
     },
     {
       Title: "Iglesia Y Pastores",
       Speaker: "Pastor Tomas Ramirez",
       Date: "Nov 21, 2023",
-      Description: "Dios quiere llegar a tu vida con este mensaje. No dejes de conocer la verdad y todo lo referente a su camino.",
+      Description:
+        "Dios quiere llegar a tu vida con este mensaje. No dejes de conocer la verdad y todo lo referente a su camino.",
     },
     {
       Title: "¿De quien eres esclavo?",
       Speaker: "Pastor Tomas M. Ramirez",
       Date: "Nov 18, 2023",
-      Description: "Dios le permita seguir avanzando en todos sus proyectos, hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo",
+      Description:
+        "Dios le permita seguir avanzando en todos sus proyectos, hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo",
     },
     {
       Title: "La Iglesia",
       Speaker: "Tomas M. Ramirez",
       Date: "Oct 12, 2023",
-      Description: "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje.",
+      Description:
+        "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje.",
     },
     {
       Title: "La Iglesia Parte 2",
       Speaker: "Tomas M. Ramirez",
       Date: "Oct 12, 2023",
-      Description: "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino.",
+      Description:
+        "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino.",
     },
     {
       Title: "momentos malos",
       Speaker: "Joshua de la Rosa",
       Date: "Oct 12, 2023",
-      Description: "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas.",
+      Description:
+        "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas.",
     },
     {
       Title: "Fijando los ojos en Cristo",
       Speaker: "Aldo Colon",
       Date: "Oct 12, 2023",
-      Description: "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida.",
+      Description:
+        "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida.",
     },
     {
       Title: "Yo lo Hare",
       Speaker: "Tomas Ramirez",
       Date: "Sep 7, 2023",
-      Description: "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo. Dios te bendiga y guarde",
+      Description:
+        "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo. Dios te bendiga y guarde",
     },
     {
       Title: "Viviendo según el llamado",
@@ -121,7 +131,6 @@ export default function Home() {
       Date: "May 4, 2023",
       Description: "",
     },
-
   ];
 
   return (
@@ -139,7 +148,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-y-6 mx-auto">
           {sermonsList.map((sermon) => (
-            <div className="flex flex-row gap-x-3">
+            <div className="flex flex-row gap-x-3" key={sermon.Title}>
               <div>Image should go here</div>
               <div className="flex flex-col w-9/12">
                 <p>{sermon.Title}</p>
