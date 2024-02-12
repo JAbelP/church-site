@@ -176,7 +176,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <LanguageSelector />
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="lg:m-auto mt-28">

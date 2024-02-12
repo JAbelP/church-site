@@ -56,7 +56,7 @@ export default function Home() {
     { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
-    <main className="bg-white h-fit w-full flex flex-col text-black">
+    <main className="bg-white h-fit w-full flex flex-col text-black overflow-x-hidden">
       <LanguageSelector/>
       <div className="mt-28 mx-auto md:mt-0">
         <NewMember />

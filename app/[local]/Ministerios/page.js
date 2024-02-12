@@ -97,8 +97,8 @@ export default function Home() {
     { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
-    <main>
-      <div className="bg-white h-fit w-full flex flex-col text-black">
+    
+<main className="overflow-x-hidden">      <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="lg:m-auto mt-28">
           <NewMember />
         </div>

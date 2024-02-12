@@ -38,7 +38,7 @@ export default function Home() {
     { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
   return (
-    <main className={ebG.className}>
+    <main className={`${ebG.className} overflow-x-hidden`}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="mt-28 mx-auto md:mt-0">
           <NewMember />
