@@ -25,6 +25,7 @@ export async function generateMetadata({ params: { locale } }) {
 
 export default function Home() {
   const t = useTranslations("Sermons");
+  const y = useTranslations("SermonsList");
   const headerTranslations = useTranslations("Header");
   const headerTitles = [
     { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
@@ -37,131 +38,138 @@ export default function Home() {
 
   const sermonsList = [
     {
-      Title: "El andar del creyente",
+      Title: y("El andar del creyente"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Jan 23, 2024",
-      Description:
-        "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos",
+      Description: y(
+        "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos"
+      ),
       ImageURL: "/SermonsImages/El Andar Del Creyente.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=nSymVeTo88M",
     },
     {
-      Title: "La Bendición Espiritual del creyente de Cristo ",
+      Title: y("La Bendición Espiritual del creyente de Cristo"),
       Speaker: "Hermano Julian Musa",
       Date: "Jan 23, 2024",
-      Description:
-        "De corazon deseo que Dios te permita llenar tu vida con esta palabra, no dejes de escuchar este maravilloso mensaje.",
+      Description: y(
+        "De corazon deseo que Dios te permita llenar tu vida con esta palabra no dejes de escuchar este maravilloso mensaje"
+      ),
       ImageURL: "/SermonsImages/BendicionEspiritualDelCreyente.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=cBYjT6RvuLI",
     },
     {
-      Title: "De donde vendrá mi ayuda",
+      Title: y("De donde vendrá mi ayuda"),
       Speaker: "Hermano Julian Musa",
       Date: "Jan 5, 2024",
       ImageURL: "/SermonsImages/DeDondeVendraMiAyuda.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=HFLjyk2jRPo",
     },
     {
-      Title: "Dependiendo de Dios",
+      Title: y("Dependiendo de Dios"),
       Speaker: "Pastor Aldo Colon",
       Date: "Dec 12, 2023",
-      Description: "Dios quiere hablar y bendecir tu vida.",
+      Description: y("Dios quiere hablar y bendecir tu vida"),
       ImageURL: "/SermonsImages/DependiendoDeDios.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=dqwGvQGK9Lg",
     },
     {
-      Title: "Una nueva vestimenta",
+      Title: y("Una nueva vestimenta"),
       Speaker: "Pastor Aldo Colon",
       Date: "Nov 23, 2023",
-      Description:
-        "Dios les permita seguir avanzando y seguir confiando en su camino, Este mensaje nos enseña la importancia de la vestimenta de Dios.",
+      Description: y(
+        "Dios les permita seguir avanzando y seguir confiando en su camino Este mensaje nos enseña la importancia de la vestimenta de Dios"
+      ),
       ImageURL: "/SermonsImages/UnaNuevaVestimenta.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=G_AVEdNPrPw",
     },
     {
-      Title: "Iglesia Y Pastores",
+      Title: y("Iglesia Y Pastores"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Nov 21, 2023",
-      Description:
-        "Dios quiere llegar a tu vida con este mensaje. No dejes de conocer la verdad y todo lo referente a su camino.",
+      Description: y(
+        "Dios quiere llegar a tu vida con este mensaje No dejes de conocer la verdad y todo lo referente a su camino"
+      ),
       ImageURL: "/SermonsImages/IglesiaYPastores.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=H8UOoYRJaiU&",
     },
     {
-      Title: "¿De quien eres esclavo?",
+      Title: y("¿De quien eres esclavo?"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Nov 18, 2023",
-      Description:
-        "Dios le permita seguir avanzando en todos sus proyectos, hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo",
+      Description: y(
+        "Dios le permita seguir avanzando en todos sus proyectos hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo"
+      ),
       ImageURL: "/SermonsImages/De Quien Eres Esclavo.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=qmn3HaZHPQQ",
     },
     {
-      Title: "La Iglesia",
+      Title: y("La Iglesia"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Oct 12, 2023",
-      Description:
-        "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje.",
+      Description: y(
+        "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje"
+      ),
       ImageURL: "/SermonsImages/La Iglesia.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=92nXwnVflR0",
     },
     {
-      Title: "La Iglesia Parte 2",
+      Title: y("La Iglesia Parte 2"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Oct 12, 2023",
-      Description:
-        "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino.",
+      Description: y(
+        "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino"
+      ),
       ImageURL: "/SermonsImages/La Iglesia.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=RSZlscIK3dI",
     },
     {
-      Title: "Momentos Malos",
+      Title: y("Momentos Malos"),
       Speaker: "Joshua de la Rosa",
       Date: "Oct 12, 2023",
-      Description:
-        "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas.",
+      Description: y(
+        "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas"
+      ),
       ImageURL: "/SermonsImages/Momentos Malos.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=ag7TA_Xlnwk",
     },
     {
-      Title: "Fijando los ojos en Cristo",
+      Title: y("Fijando los ojos en Cristo"),
       Speaker: "Pastor Aldo Colon",
       Date: "Oct 12, 2023",
-      Description:
-        "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida.",
+      Description: y(
+        "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida"
+      ),
       ImageURL: "/SermonsImages/Fijando Los Ojos En Cristo.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=2zep9_dgtTE",
     },
     {
-      Title: "Yo lo Hare",
+      Title: y("Yo lo Hare"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Sep 7, 2023",
-      Description:
-        "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo. Dios te bendiga y guarde",
+      Description: y(
+        "De corazon deseo que Dios te permita llenar tu vida con esta palabra no dejes de escuchar este maravilloso mensaje"
+      ),
       ImageURL: "/SermonsImages/Yo Lo Hare.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=IjDO79orPrU",
     },
     {
-      Title: "Viviendo según el llamado",
+      Title: y("Viviendo según el llamado"),
       Speaker: "Pastor Aldo Colon",
       Date: "Sep 1, 2023",
-      Description: "",
       ImageURL: "/SermonsImages/Viviendo Seguin El Llamando.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=uuwq3huJgzc",
     },
     {
-      Title: "¡EL MUNDO NO ME PUEDE OFRECER NADA!",
+      Title: y("¡EL MUNDO NO ME PUEDE OFRECER NADA"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "Jul 2, 2023",
-      Description: "",
       ImageURL: "/SermonsImages/El Mundo No Me Puede Ofrecer Nada.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=jv0-RsY6ueA",
     },
     {
-      Title: "REMOVIENDO LAS CENIZAS, PARA QUE EL FUEGO NO SE APAGUE",
+      Title: y("REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE"),
       Speaker: "Pastor Tomas Ramirez",
       Date: "May 4, 2023",
-      Description: "",
       ImageURL: "/SermonsImages/Removiendo las Cenizas.jpg",
       YoutubeURL: "https://www.youtube.com/watch?v=tsLE7ry4bUY",
     },
@@ -182,7 +190,10 @@ export default function Home() {
         </div>
         <div>
           {sermonsList.map((sermon) => (
-            <div className="flex flex-col items-center text-center py-4 lg:flex-row lg:justify-center" key={sermon.Title}>
+            <div
+              className="flex flex-col items-center text-center py-4 lg:flex-row lg:justify-center"
+              key={sermon.Title}
+            >
               <div>
                 <a href={sermon.YoutubeURL}>
                   <Image
@@ -195,9 +206,9 @@ export default function Home() {
                 </a>
               </div>
               <div className="w-10/12 lg:w-3/12 lg:pl-4 pt-2">
-                <p className="font-bold">{sermon.Title}</p>
+                <p className="font-bold capitalize">{sermon.Title}</p>
                 <p className="pt-2">{sermon.Speaker}</p>
-                <p className="pt-2">{sermon.Description}</p>
+                <p className="pt-2 capitalize">{sermon.Description}</p>
                 <p className="pt-2">{sermon.Date}</p>
               </div>
             </div>

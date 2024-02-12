@@ -15,8 +15,43 @@
     "EventosTitle": "Conoce nuestros Eventos",
     "EventosDescription": "Conoce nuestros Eventos"
   },
+  "Offering": {
+    "Name": "Nombre",
+    "Phone": "Teléfono",
+    "Email": "E-mail",
+    "Submit": "Enviar",
+    "Thanks": "Thank you for supporting our Ministries we accept payments through Zelle Please fill out the information below for tax purposes"
+  },
   "Success": {
     "Thanks": "Gracias, Volveremos a Contactarte en Breve."
+  },
+  "SermonsList": {
+    "El andar del creyente": "El andar del creyente",
+    "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos": "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos",
+    "La Bendición Espiritual del creyente de Cristo": "La Bendición Espiritual del creyente de Cristo",
+    "De corazon deseo que Dios te permita llenar tu vida con esta palabra no dejes de escuchar este maravilloso mensaje": "De corazon deseo que Dios te permita llenar tu vida con esta palabra no dejes de escuchar este maravilloso mensaje",
+    "De donde vendrá mi ayuda": "De donde vendrá mi ayuda",
+    "Dependiendo de Dios": "Dependiendo de Dios",
+    "Dios quiere hablar y bendecir tu vida": "Dios quiere hablar y bendecir tu vida",
+    "Una nueva vestimenta": "Una nueva vestimenta",
+    "Dios les permita seguir avanzando y seguir confiando en su camino Este mensaje nos enseña la importancia de la vestimenta de Dios": "Dios les permita seguir avanzando y seguir confiando en su camino Este mensaje nos enseña la importancia de la vestimenta de Dios",
+    "Iglesia Y Pastores": "Iglesia Y Pastores",
+    "Dios quiere llegar a tu vida con este mensaje No dejes de conocer la verdad y todo lo referente a su camino": "Dios quiere llegar a tu vida con este mensaje No dejes de conocer la verdad y todo lo referente a su camino",
+    "¿De quien eres esclavo": "¿De quien eres esclavo",
+    "Dios le permita seguir avanzando en todos sus proyectos hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo": "Dios le permita seguir avanzando en todos sus proyectos hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo",
+    "La Iglesia": "La Iglesia",
+    "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje": "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje",
+    "La Iglesia Parte 2": "La Iglesia Parte 2",
+    "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino": "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino",
+    "Momentos Malos": "Momentos Malos",
+    "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas": "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas",
+    "Fijando los ojos en Cristo": "Fijando los ojos en Cristo",
+    "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida": "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida",
+    "Yo lo Hare": "Yo lo Hare",
+    "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo Dios te bendiga y guarde": "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo Dios te bendiga y guarde",
+    "Viviendo según el llamado": "Viviendo según el llamado",
+    "¡EL MUNDO NO ME PUEDE OFRECER NADA": "¡EL MUNDO NO ME PUEDE OFRECER NADA!",
+    "REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE": "REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE"
   },
   "Home": {
     "title": "Ejemplo de Título en Inglés",

@@ -40,6 +40,7 @@ export default function EntirePage({
   header3,
   header4,
   header5,
+  header6
 }) {
   // set up for reCaptcha
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
@@ -113,7 +114,7 @@ export default function EntirePage({
     { Name: Object.values({ header3 }), Link: "/Ministerios" },
     { Name: Object.values({ header4 }), Link: "/Eventos" },
     { Name: Object.values({ header5 }), Link: "/Sermones" },
-    { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
+    { Name: Object.values({header6}), Link: "/Ofrenda" },
   ];
 
   return (

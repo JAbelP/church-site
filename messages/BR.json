@@ -14,16 +14,45 @@
     "LeadershipDiscription": "Conheça nossa Liderança",
     "EventosTitle": "Conheça nossos Eventos",
     "EventosDiscription": "Conheça nossos Eventos"
-  },  
+  },
   "Success": {
     "Thanks": "Obrigado, Entraremos em Contato em Breve."
   },
-  "SermonsList":{
-    "SermonTitle1":"Example",
-    "SermonSpeaker1":"Speaker1",
-    "SermonDate1":"0/0/0",
-    "SermoneDescription":"Description"
+  "Offering": {
+    "Name": "Nome",
+    "Phone": "Telefone",
+    "Email": "E-mail",
+    "Submit": "Enviar",
+    "Thanks":"Thank you for supporting our Ministries we accept payments through Zelle Please fill out the information below for tax purposes"
 
+  },
+  "SermonsList": {
+    "El andar del creyente": "A jornada do crente",
+    "Seguimos con la hermosa enseñanza de nuestro padre amado Jesucristo porque maravilloso son sus caminos": "Continuamos com o belo ensinamento de nosso amado pai Jesus Cristo porque seus caminhos são maravilhosos",
+    "La Bendición Espiritual del creyente de Cristo": "A bênção espiritual do crente em Cristo",
+    "De corazon deseo que Dios te permita llenar tu vida con esta palabra no dejes de escuchar este maravilloso mensaje": "Do fundo do coração, desejo que Deus permita que você encha sua vida com esta palavra, não deixe de ouvir esta mensagem maravilhosa",
+    "De donde vendrá mi ayuda": "De onde virá o meu socorro",
+    "Dependiendo de Dios": "Dependendo de Deus",
+    "Dios quiere hablar y bendecir tu vida": "Deus quer falar e abençoar sua vida",
+    "Una nueva vestimenta": "Uma nova vestimenta",
+    "Dios les permita seguir avanzando y seguir confiando en su camino Este mensaje nos enseña la importancia de la vestimenta de Dios": "Que Deus lhes permita continuar avançando e confiando em seu caminho. Esta mensagem nos ensina a importância da vestimenta de Deus",
+    "Iglesia Y Pastores": "Igreja e Pastores",
+    "Dios quiere llegar a tu vida con este mensaje No dejes de conocer la verdad y todo lo referente a su camino": "Deus quer chegar à sua vida com esta mensagem. Não deixe de conhecer a verdade e tudo o que se refere ao seu caminho",
+    "¿De quien eres esclavo": "De quem você é servo",
+    "Dios le permita seguir avanzando en todos sus proyectos hoy Dios me ha permitido llevar un hermoso mensaje para todos mis hermanos en Cristo": "Que Deus permita que ele continue avançando em todos os seus projetos. Hoje Deus me permitiu trazer uma bela mensagem para todos os meus irmãos em Cristo",
+    "La Iglesia": "A igreja",
+    "Deseo de Corazón que Dios este hablando a tu vida y bendiciéndote con este maravilloso mensaje": "Desejo do fundo do coração que Deus esteja falando à sua vida e te abençoando com esta maravilhosa mensagem",
+    "La Iglesia Parte 2": "A igreja Parte 2",
+    "Dios es maravillo y se esta glorificando de gran manera para que puedas conocer su camino": "Deus é maravilhoso e está se glorificando grandemente para que você possa conhecer seu caminho",
+    "Momentos Malos": "Momentos ruins",
+    "Esta poderosa palabra nos hace entender que Dios puede usar a nuestros jóvenes para grandes cosas": "Esta poderosa palavra nos faz entender que Deus pode usar nossos jovens para grandes coisas",
+    "Fijando los ojos en Cristo": "Fixando os olhos em Cristo",
+    "Deseamos que Dios hable a tu corazón en este momento y te permita cumplir su palabra en tu vida": "Desejamos que Deus fale ao seu coração neste momento e permita que você cumpra sua palavra em sua vida",
+    "Yo lo Hare": "Eu farei isso",
+    "Deseo de corazón que esta palabra de Dios pueda bendecir tu vida y la de todos tus familiares de gran manera y permita que conozcas nuestro señor Jesucristo Dios te bendiga y guarde": "Desejo do fundo do coração que esta palavra de Deus possa abençoar sua vida e a de todos os seus familiares grandemente e permita que você conheça nosso Senhor Jesus Cristo. Deus te abençoe e guarde",
+    "Viviendo según el llamado": "Vivendo de acordo com o chamado",
+    "¡EL MUNDO NO ME PUEDE OFRECER NADA": "O MUNDO NÃO PODE ME OFERECER NADA",
+    "REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE": "REMOVENDO AS CINZAS PARA QUE O FOGO NÃO SE APAGUE"
   },
   "Home": {
     "title": "Exemplo de Título em Inglês",
@@ -98,50 +127,50 @@
     "CHILDREN'S MINISTRY": "MINISTÉRIO INFANTIL",
     "Evangelization Desc": "A Evangelização, ou Evangelismo, é a missão e função principal da Igreja. Consiste em levar as Boas Novas de Jesus Cristo àqueles que, por não o conhecerem, estão perdendo a oportunidade de viver uma vida abundante e serem salvos. A dinâmica de evangelizar surge da experiência de ter sido reconciliado com Deus. Portanto, evangelizar é basicamente a tarefa de todos os cristãos, o tempo todo e em tudo o que fazem. Cristo enviou todos os crentes ao redor do mundo para fazer discípulos.",
     "Worship and Praise Desc": "No ato de adoração, enriquecemos nossa vida espiritual, pois a vida de Deus nos é oferecida em Cristo, que está presente na adoração. A adoração não é o objetivo final da vida cristã, mas é a função da igreja e dos crentes, que nutre e unifica todas as outras funções do Corpo de Cristo.",
-    "Christian Education Desc" : "A Educação Cristã visa proporcionar e facilitar aqueles processos e experiências necessários, para que as pessoas possam estudar, examinar e refletir sobre os conteúdos de sua fé cristã, especialmente no que diz respeito ao amor redentor de Deus revelado em Jesus Cristo, para que cada pessoa possa responder em fé e amor ao Senhor, compreender a si mesma e sua situação humana, e, unida à comunidade cristã, viver no Espírito todos os seus relacionamentos humanos e cumprir seu discipulado no mundo, perseverando na esperança cristã.",
-    "Missions Desc" : "Nosso Senhor Jesus Cristo ordenou que seu Evangelho fosse pregado até os confins da terra. A responsabilidade missionária da igreja é inevitável. Todos temos uma parte nessa obrigação, alguns participando diretamente como missionários em diferentes funções, outros contribuindo com nossos recursos para tornar esse trabalho possível. Portanto, fazemos missão como indivíduos, na congregação local e através das instituições e organizações de nossa igreja que têm essa tarefa. Nossa principal responsabilidade de apoio missionário é através da Iglesia Cristiana Luz Y Vida MC Inc. e das entidades eclesiásticas que eles apoiam.",
+    "Christian Education Desc": "A Educação Cristã visa proporcionar e facilitar aqueles processos e experiências necessários, para que as pessoas possam estudar, examinar e refletir sobre os conteúdos de sua fé cristã, especialmente no que diz respeito ao amor redentor de Deus revelado em Jesus Cristo, para que cada pessoa possa responder em fé e amor ao Senhor, compreender a si mesma e sua situação humana, e, unida à comunidade cristã, viver no Espírito todos os seus relacionamentos humanos e cumprir seu discipulado no mundo, perseverando na esperança cristã.",
+    "Missions Desc": "Nosso Senhor Jesus Cristo ordenou que seu Evangelho fosse pregado até os confins da terra. A responsabilidade missionária da igreja é inevitável. Todos temos uma parte nessa obrigação, alguns participando diretamente como missionários em diferentes funções, outros contribuindo com nossos recursos para tornar esse trabalho possível. Portanto, fazemos missão como indivíduos, na congregação local e através das instituições e organizações de nossa igreja que têm essa tarefa. Nossa principal responsabilidade de apoio missionário é através da Iglesia Cristiana Luz Y Vida MC Inc. e das entidades eclesiásticas que eles apoiam.",
     "Prayer Desc": "O Ministério da Oração é essencialmente importante na existência e manutenção da vida espiritual da Igreja. Este ministério promoverá, estimulará e inspirará constantemente o corpo corporativo da Igreja a manter viva a oração em todos os assuntos e em todos os momentos, assim como o Senhor nos ensinou a orar sem cessar.",
-    "Pastoral Counseling Desc" :"O aconselhamento é dado pelo Pastor Sênior e será considerado um conselho do Senhor desde que esse conselho seja bíblico, de caráter saudável, esteja alinhado com a visão e missão da igreja e estimule a unidade entre os irmãos. Todas as reuniões de aconselhamento serão realizadas com maior confidencialidade.",
-    "Couples Ministry Desc":"Trazer cura a todos os casais em nossa igreja e outros casais relacionados, capacitando-os e equipando-os para suas vidas de casal em Cristo Jesus.",
-    "Men's Ministry Desc":"O Ministério dos Homens é a busca ativa de homens para conectá-los a Deus, à Sua Palavra e a outros homens, com o propósito de ganhar, desenvolver e treinar o homem de Deus em Cristo.",
-    "Women's Ministry Desc" :"Promover o papel das mulheres de uma perspectiva cristã, fortalecendo as diferentes áreas de suas vidas. Poder se aproximar das mulheres, sejam solteiras, casadas, separadas e/ou divorciadas, para que tenham um encontro com Cristo. E que participemos ativamente e sejamos representantes fiéis de Deus na igreja, em nossos lares e em nossa comunidade.",
+    "Pastoral Counseling Desc": "O aconselhamento é dado pelo Pastor Sênior e será considerado um conselho do Senhor desde que esse conselho seja bíblico, de caráter saudável, esteja alinhado com a visão e missão da igreja e estimule a unidade entre os irmãos. Todas as reuniões de aconselhamento serão realizadas com maior confidencialidade.",
+    "Couples Ministry Desc": "Trazer cura a todos os casais em nossa igreja e outros casais relacionados, capacitando-os e equipando-os para suas vidas de casal em Cristo Jesus.",
+    "Men's Ministry Desc": "O Ministério dos Homens é a busca ativa de homens para conectá-los a Deus, à Sua Palavra e a outros homens, com o propósito de ganhar, desenvolver e treinar o homem de Deus em Cristo.",
+    "Women's Ministry Desc": "Promover o papel das mulheres de uma perspectiva cristã, fortalecendo as diferentes áreas de suas vidas. Poder se aproximar das mulheres, sejam solteiras, casadas, separadas e/ou divorciadas, para que tenham um encontro com Cristo. E que participemos ativamente e sejamos representantes fiéis de Deus na igreja, em nossos lares e em nossa comunidade.",
     "Teen's Ministry Desc": "Capturar os jovens através do amor de Jesus para que possam reconhecer o papel que desempenham dentro da igreja e da sociedade, proporcionando-lhes as ferramentas necessárias para enfrentar qualquer situação na vida e sair mais que vencedores em nome de nosso Senhor Jesus Cristo. Eles também podem compreender o chamado de Deus em suas vidas e serem jovens que impactam a sociedade onde vivem com uma vida justa diante de Deus.",
-    "Children's Ministry Desc":"Ter um ministério infantil eficaz com crescimento espiritual, transformador, inovador e crescente, guiando a criança através do ensino para amar a Jesus e ser cheia do Espírito Santo",
+    "Children's Ministry Desc": "Ter um ministério infantil eficaz com crescimento espiritual, transformador, inovador e crescente, guiando a criança através do ensino para amar a Jesus e ser cheia do Espírito Santo",
     "example3": "exemplo"
   },
-  "Leadeship":{
-    "Leadership":"Liderança",
-    "Pastors":"Pastores",
-    "Associate Pastores":"Pastores Associados",
-    "Decons":"Diáconos"
+  "Leadeship": {
+    "Leadership": "Liderança",
+    "Pastors": "Pastores",
+    "Associate Pastores": "Pastores Associados",
+    "Decons": "Diáconos"
   },
-  "Events":{
-    "event1":"Grupo de Adoração",
-    "eventTime1":"Domingo 1:30 PM",
-    "eventLocation1":"2318 Cilantro Dr. Orlando FL 32837",
-    "event2":"Pequeno Grupo em Português",
-    "eventTime2":"Quarta-feira 19 de julho 7:30 PM",
-    "event3":"Estudo Bíblico",
-    "eventTime3":"Sexta-feira 7:30 PM",
-    "event4":"RETIRO DE ORAÇÃO",
-    "eventTime4":"Sábado 29 de julho 9:00 AM - 1:00 PM",
-    "Events":"Eventos"
+  "Events": {
+    "event1": "Grupo de Adoração",
+    "eventTime1": "Domingo 1:30 PM",
+    "eventLocation1": "2318 Cilantro Dr. Orlando FL 32837",
+    "event2": "Pequeno Grupo em Português",
+    "eventTime2": "Quarta-feira 19 de julho 7:30 PM",
+    "event3": "Estudo Bíblico",
+    "eventTime3": "Sexta-feira 7:30 PM",
+    "event4": "RETIRO DE ORAÇÃO",
+    "eventTime4": "Sábado 29 de julho 9:00 AM - 1:00 PM",
+    "Events": "Eventos"
   },
-  "Header":{
-    "Who Are We":"Quem Somos Nós",
-    "Leadership":"Liderança",
-    "Ministries":"Ministérios",
-    "Events":"Eventos",
-    "Sermons":"Sermões",
-    "Offerings":"Ofertas"
+  "Header": {
+    "Who Are We": "Quem Somos Nós",
+    "Leadership": "Liderança",
+    "Ministries": "Ministérios",
+    "Events": "Eventos",
+    "Sermons": "Sermões",
+    "Offerings": "Ofertas"
   },
-  "newMemberComponent":{
-    "Call To Action":"Junte-se a Nós Hoje"
+  "newMemberComponent": {
+    "Call To Action": "Junte-se a Nós Hoje"
   },
-  "Footer":{
-    "Visit":"Visite-nos",
-    "Hours":"Horários",
-    "Time1":"Domingo 1:30 PM",
-    "Time2":"Sexta-feira 7:30 PM"
+  "Footer": {
+    "Visit": "Visite-nos",
+    "Hours": "Horários",
+    "Time1": "Domingo 1:30 PM",
+    "Time2": "Sexta-feira 7:30 PM"
   }
 }

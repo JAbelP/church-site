@@ -19,6 +19,7 @@ export async function generateMetadata({ params: { locale } }) {
 
 export default function Home() {
   const t = useTranslations("NewMembers");
+  const h = useTranslations("Header");
 
   return (
     <>
@@ -47,11 +48,12 @@ export default function Home() {
         submitText={t("Submit")}
         bibleVerse={t("Bible Verse")}
         bibleVerseCite={t("Bible Verse Cite")}
-        header1={t("Who Are We")}
-        header2={t("Leadership")}
-        header3={t("Ministries")}
-        header4={t("Events")}
-        header5={t("Sermons")}
+        header1={h("Who Are We")}
+        header2={h("Leadership")}
+        header3={h("Ministries")}
+        header4={h("Events")}
+        header5={h("Sermons")}
+        header6={h("Offerings")}
       />
     </>
   );
