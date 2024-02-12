@@ -32,8 +32,9 @@ export default function Home() {
 
 
   return (
-    <main className={ebG.className}>
-      <div className="bg-white h-fit w-full flex flex-col text-black">
+    
+  <main className={`${ebG.className} overflow-x-hidden`}>
+   <div className="bg-white h-fit w-full flex flex-col text-black">
         <div className="mt-28 mx-auto md:mt-0">
           <NewMember />
         </div>
