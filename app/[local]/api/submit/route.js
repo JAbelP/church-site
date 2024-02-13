@@ -15,7 +15,7 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
-async function sendMail(  body) {
+async function sendMail(body) {
   const { SMTP_EMAIL, SMTP_PASSWORD } = process.env;
   const transport = nodemailer.createTransport({
     service: "gmail",
@@ -23,7 +23,7 @@ async function sendMail(  body) {
       user: SMTP_EMAIL,
       pass: SMTP_PASSWORD,
     },
-  })
+  });
 
   try {
     const testResult = await transport.verify();
@@ -31,23 +31,38 @@ async function sendMail(  body) {
     console.error({ error });
     return;
   }
-
+  const bodyJsonString = JSON.stringify(body);
+  let sendResult;
   try {
-    const sendResult = await transport.sendMail({
-      from: SMTP_EMAIL,
-      to:SMTP_EMAIL,
-      subject:"New Member",
-      text:JSON.stringify(body)
-      // html: body,
-    });
+
+    console.log(body);
+    console.log(bodyJsonString);
+    if (body.subject === "New Member") {
+      sendResult = await transport.sendMail({
+        from: SMTP_EMAIL,
+        to: SMTP_EMAIL,
+        subject: "New Member",
+        text: JSON.stringify(body),
+        // html: body,
+      });
+    }
+    if (body.subject === "Ofrenda") {
+      sendResult = await transport.sendMail({
+        from: SMTP_EMAIL,
+        to: SMTP_EMAIL,
+        subject: "New Member",
+        text: JSON.stringify(body),
+        // html: body,
+      });
+    }
     console.log(sendResult);
   } catch (error) {
     console.log(error);
   }
-
 }
+
 export async function POST(request) {
   const body = await request.json();
-  sendMail(body)
+  sendMail(body);
   return NextResponse.json({ status: 200 });
 }

@@ -19,6 +19,7 @@ export default function OfrendaForm({
   thanks,
   bibleVerse,
   bibleVerseCite,
+  click,
 }) {
   // set up for reCaptcha
   const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITEKEY;
@@ -56,6 +57,7 @@ export default function OfrendaForm({
                 name,
                 email,
                 phone,
+                subject:"Ofrenda"
               };
 
               const body = JSON.stringify(bodyNoJson);
@@ -87,15 +89,24 @@ export default function OfrendaForm({
           <div>
             <div className="w-2/3 mx-auto">
               <div className="mb-4 w-11/12 text-center">{thanks}</div>
-              <div className=" rounded-lg  mb-4 bg-purple-300 h-16 flex flex-row justify-around items-center">
-                <div>
-                  <Image src={"/offerings/zelle-64.png"} 
+              <div className=" rounded-lg  mb-4 px-4 py-3 bg-purple-300 h-16 flex flex-row justify-around items-center">
+                <div className="flex flex-row items-center">
+                  <Image
+                    src={"/offerings/zelle-64.png"}
                     alt="zelle-64"
                     width={64}
                     height={64}
                   />
+                </div>{" "}
+                <p className=" text-base">{click}</p>
+                <div
+                  className="text-xl bg-white rounded-md p-2"
+                  onClick={() =>
+                    navigator.clipboard.writeText("(xxx)-xxx-xxxx")
+                  }
+                >
+                  (321)-278-3777
                 </div>
-                <div className="text-xl bg-white rounded-md p-2" onClick={() => navigator.clipboard.writeText('(xxx)-xxx-xxxx')}>(xxx)-xxx-xxxx</div>
               </div>
               <form
                 className="bg-blue-200 rounded-lg p-8"

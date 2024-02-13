@@ -88,6 +88,7 @@ export default function EntirePage({
                 heard,
                 wouldLikeTo,
                 petition,
+                subject:"New Member"
               };
 
               const body = JSON.stringify(bodyNoJson);

@@ -1,27 +1,24 @@
-import { getTranslations } from "next-intl/server";
-import { EB_Garamond } from "next/font/google";
-import { useTranslations } from "next-intl";
 import Header from "../../../component/headerComponent/header";
-import LanguageSelector from "../../../component/flagComponents/flagSelector";
+import NewMember from "../../../component/newMemberComponent/newMember";
 import Footer from "../../../component/footerComponent/footer";
+import { EB_Garamond } from "next/font/google";
+import localFont from "next/font/local";
+import OfrendaForm from "../../../component/ofrendaComponenets/ofrendaForm";
+import LanguageSelector from "../../../component/flagComponents/flagSelector";
+import { useTranslations } from "next-intl";
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
-// export const metadata = {
-//   title: "Soy Nuevo",
-//   description: "Únase a nuestra Iglesia",
-// };
 
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    title: t("NewMemberSuccessTitle"),
+    title: t("OfferingThanksTitle")
   };
 }
-
 export default function Home() {
+  const t = useTranslations("Success");
   const headerTranslations = useTranslations("Header");
-  const Success = useTranslations("Success");
   const headerTitles = [
     { Name: headerTranslations("Who Are We"), Link: "/QuienesSomos" },
     { Name: headerTranslations("Leadership"), Link: "/Liderazgo" },
@@ -30,15 +27,19 @@ export default function Home() {
     { Name: headerTranslations("Sermons"), Link: "/Sermones" },
     { Name: headerTranslations("Offerings"), Link: "/Ofrenda" },
   ];
+
   return (
-    <main className={ebG.className}>
+    <main className={`${ebG.className} overflow-x-hidden`}>
       <div className="bg-white h-fit w-full flex flex-col text-black">
-        <div className="md:mt-0 mt-48">
+        <div className="mt-28 mx-auto md:mt-0">
+          <NewMember />
+        </div>
+        <div className="mt-13 md:mt-0">
           <Header headerTitles={headerTitles} />
         </div>
-        <LanguageSelector />{" "}
+        <LanguageSelector />
         <div>
-          <div className="lg:text-5xl text-3xl">{Success("Thanks")}</div>
+          <div className="lg:text-5xl text-3xl text-center font-bold my-6">{t("Donation")}</div>
         </div>
         <Footer />
       </div>

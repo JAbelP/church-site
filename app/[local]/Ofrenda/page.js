@@ -6,14 +6,20 @@ import localFont from "next/font/local";
 import OfrendaForm from "../../component/ofrendaComponenets/ofrendaForm";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 const CopperplateBold = localFont({ src: "../../../font/CopperplateBold.ttf" });
 
-export const metadata = {
-  title: "Quienes Somos",
-  description: "Quienes Somos Nosotros",
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("OfferingTitle"),
+    description: t("OfferingDescription"),
+  };
+}
 
 export default function Home() {
   const t = useTranslations("Offering");
@@ -43,8 +49,9 @@ export default function Home() {
           nameText={t("Name")}
           phoneText={t("Phone")}
           thanks={t("Thanks")}
-          bibleVerse={"Verse"}
-          bibleVerseCite={"cite"}
+          bibleVerse={t("Verse")}
+          bibleVerseCite={t("cite")}
+          click={t("click")}
           // bibleVerse={t("Verse")}
           // bibleVerseCite={t("cite")}
         />

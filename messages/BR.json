@@ -13,18 +13,25 @@
     "LeadershipTitle": "Conheça nossa Liderança",
     "LeadershipDiscription": "Conheça nossa Liderança",
     "EventosTitle": "Conheça nossos Eventos",
-    "EventosDiscription": "Conheça nossos Eventos"
+    "EventosDiscription": "Conheça nossos Eventos",
+    "OfferingThanksTitle": "Obrigado pela sua doação",
+    "OfferingTitle": "Obrigado por considerar a sua doação",
+    "OfferingDescription": "Doe para a Luz Y Vida hoje!",
+    "NewMemberTitle": "Junte-se à Igreja Luz Y Vida",
+    "NewMemberDescription": "Junte-se à Igreja Luz Y Vida",
+    "NewMemberSuccessTitle": "Junte-se à Igreja Luz Y Vida"
   },
   "Success": {
-    "Thanks": "Obrigado, Entraremos em Contato em Breve."
+    "Thanks": "Obrigado, Entraremos em Contato em Breve.",
+    "Donation": "Obrigado pela sua doação"
   },
   "Offering": {
     "Name": "Nome",
     "Phone": "Telefone",
     "Email": "E-mail",
     "Submit": "Enviar",
-    "Thanks":"Thank you for supporting our Ministries we accept payments through Zelle Please fill out the information below for tax purposes"
-
+    "Thanks": "Thank you for supporting our Ministries we accept payments through Zelle Please fill out the information below for tax purposes",
+    "click": "Clique aqui para copiar o número de telefone"
   },
   "SermonsList": {
     "El andar del creyente": "A jornada do crente",
