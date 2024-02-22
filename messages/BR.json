@@ -156,7 +156,8 @@
     "eventTime1": "Domingo 1:30 PM",
     "eventLocation1": "2318 Cilantro Dr. Orlando FL 32837",
     "event2": "Estudo Bíblico",
-    "eventTime2": "Sábado 6:30 PM"
+    "eventTime2": "Sábado 6:30 PM",
+    "Events": "Eventos"
   },
   "Header": {
     "Who Are We": "Quem Somos Nós",
