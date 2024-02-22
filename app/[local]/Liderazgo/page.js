@@ -25,7 +25,6 @@ export async function generateMetadata({ params: { locale } }) {
   };
 }
 
-
 export default function Home() {
   const t = useTranslations("Leadeship");
   const headerTranslations = useTranslations("Header");
@@ -45,17 +44,17 @@ export default function Home() {
         </div>
         <LanguageSelector />
         <div className="mt-13 md:mt-0">
-          <Header headerTitles={headerTitles}/>
+          <Header headerTitles={headerTitles} />
         </div>
 
         <div className={CopperplateBold.className}>
           <div className="text-center text-black lg:text-7xl text-3xl  tracking-widest lg:mb-16 my-5">
-            {t('Leadership')}
+            {t("Leadership")}
           </div>
         </div>
 
         <div className="text-5xl font-medium tracking-widest mx-auto uppercase">
-          {t('Pastors')}
+          {t("Pastors")}
         </div>
         <div className="flex flex-col">
           <div>
@@ -66,7 +65,7 @@ export default function Home() {
             />
           </div>
           <div className="text-4xl font-medium tracking-widest uppercase text-center justify-center mx-auto">
-            {t('Associate Pastores')}
+            {t("Associate Pastores")}
           </div>
           <div>
             <SubEyeCatch
@@ -79,7 +78,7 @@ export default function Home() {
 
         <div className=" mt-16">
           <div className=" mb-8 text-center  text-4xl font-medium tracking-widest">
-            {t('Decons')}
+            {t("Decons")}
           </div>
           <div className="flex md:flex-row md:justify-evenly flex-col gap-y-16">
             <SubEyeCatch
@@ -92,6 +91,18 @@ export default function Home() {
               names={"JOSE & ANA PAULA DE LA ROSA"}
               imageLocation={"/Leadership/DeRosa.jpg"}
               altText={"Decon: JOSE & ANA PAULA DE LA ROSA"}
+            />
+          </div>
+        </div>
+        <div className=" mt-16">
+          <div className=" mb-8 text-center  text-4xl font-medium tracking-widest">
+            {t("Worship Leader")}
+          </div>
+          <div className="flex md:flex-row md:justify-evenly flex-col gap-y-16">
+            <SubEyeCatch
+              names={"MOISÉS RAMIREZ"}
+              imageLocation={"/Leadership/Moises.jpg"}
+              altText={"Worship Leader: Moises Ramirez"}
             />
           </div>
         </div>
