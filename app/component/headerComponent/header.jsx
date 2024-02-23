@@ -51,7 +51,7 @@ function Header({headerTitles}) {
       <div
         className={`fixed w-2/3 h-full bg-blue-500 right-0 top-0 duration-300 z-20 transition-transform transform ${
           menuOpen ? "-translate-x-0" : "translate-x-full"
-        } text-center text-5xl pt-36`}
+        } text-center text-4xl pt-36`}
       >
       <ul>
         {headerTitles.map((header) =>{

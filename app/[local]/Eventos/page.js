@@ -10,6 +10,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import LanguageSelector from "../../component/flagComponents/flagSelector";
 
+
 export async function generateMetadata({ params: { locale } }) {
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -46,7 +47,7 @@ export default function Home() {
   ];
   return (
     <main className="bg-white h-fit w-full flex flex-col text-black overflow-x-hidden">
-      <LanguageSelector />
+      <LanguageSelector/>
       <div className="mt-28 mx-auto md:mt-0">
         <NewMember />
       </div>

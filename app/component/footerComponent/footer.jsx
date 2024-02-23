@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "next/link";
 import { EB_Garamond } from "next/font/google";
 import { useTranslations } from "next-intl";
+import Credits from "./credits"
 
 const ebG = EB_Garamond({ subsets: ["latin"] });
 
@@ -9,7 +9,7 @@ function Footer() {
   const t = useTranslations('Footer');
   return (
     <div className={ebG.className}>
-      <div className="text-black mt-6">
+      <div className="text-black my-6">
         <div className="bg-black h-8 mb-8" />
         <div className="flex lg:flex-row flex-col gap-x-6 justify-center">
           <div className=" hidden lg:block lg:ml-8">
@@ -56,6 +56,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <Credits/>
     </div>
   );
 }

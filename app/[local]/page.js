@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="bg-white lg:h-fit lg:w-full h-auto w-screen flex flex-col text-black overflow-clip">
+    <main className="bg-white overflow-x-hidden lg:h-fit lg:w-full h-auto w-screen flex flex-col text-black overflow-clip">
       <LanguageSelector />
       <div className="mt-28 mx-auto md:mt-0">
         <NewMember />
