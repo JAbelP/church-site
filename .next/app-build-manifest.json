@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "/[lang]/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/layout.css",
+      "static/chunks/app/[lang]/layout.js"
+    ],
+    "/[lang]/Ofrenda/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/Ofrenda/page.css",
+      "static/chunks/app/[lang]/Ofrenda/page.js"
+    ],
+    "/[lang]/Eventos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/Eventos/page.css",
+      "static/chunks/app/[lang]/Eventos/page.js"
+    ],
+    "/[lang]/Sermones/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/Sermones/page.css",
+      "static/chunks/app/[lang]/Sermones/page.js"
+    ],
+    "/[lang]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/page.css",
+      "static/chunks/app/[lang]/page.js"
+    ],
+    "/[lang]/QuienesSomos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/QuienesSomos/page.css",
+      "static/chunks/app/[lang]/QuienesSomos/page.js"
+    ],
+    "/[lang]/Liderazgo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/Liderazgo/page.css",
+      "static/chunks/app/[lang]/Liderazgo/page.js"
+    ],
+    "/[lang]/Ministerios/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/Ministerios/page.css",
+      "static/chunks/app/[lang]/Ministerios/page.js"
+    ],
+    "/[lang]/SoyNuevo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[lang]/SoyNuevo/page.css",
+      "static/chunks/app/[lang]/SoyNuevo/page.js"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "/[lang]/Eventos/page": "app/[lang]/Eventos/page.js",
+  "/[lang]/Sermones/page": "app/[lang]/Sermones/page.js",
+  "/[lang]/Ofrenda/page": "app/[lang]/Ofrenda/page.js",
+  "/[lang]/SoyNuevo/page": "app/[lang]/SoyNuevo/page.js",
+  "/[lang]/Liderazgo/page": "app/[lang]/Liderazgo/page.js",
+  "/[lang]/Ministerios/page": "app/[lang]/Ministerios/page.js"
+}

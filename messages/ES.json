@@ -22,11 +22,14 @@
     "NewMemberSuccessTitle": "Únete a la Iglesia Luz Y Vida"
   },
   "Offering": {
+    "Title": "Ofrenda",
     "Name": "Nombre",
     "Phone": "Teléfono",
     "Email": "E-mail",
     "Submit": "Enviar",
-    "Thanks": "Thank you for supporting our Ministries we accept payments through Zelle Please fill out the information below for tax purposes",
+    "Verse": "Traigan el diezmo completo al alfolí, para que haya alimento en mi casa. Pruébenme en esto”, dice el Señor Todopoderoso",
+    "cite": "Malaquías 3:10",
+    "Thanks": "Gracias por apoyar nuestros Ministerios. Aceptamos pagos a través de Zelle. Por favor, complete la información a continuación para fines fiscales.",
     "click": "Haz clic aquí para copiar el número de teléfono"
   },
   "Success": {
@@ -62,7 +65,6 @@
     "REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE": "REMOVIENDO LAS CENIZAS PARA QUE EL FUEGO NO SE APAGUE"
   },
   "Home": {
-    "title": "Ejemplo de Título en Inglés",
     "Leadership": "LIDERAZGO",
     "About Us": "SOBRE NOSOTROS",
     "Bible Verse": "Él te ha declarado, oh hombre, lo que es bueno; y ¿qué pide de ti Jehová, sino hacer justicia, y amar misericordia, y humillarte ante tu Dios?",
